@@ -1,0 +1,96 @@
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}About RTXI}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Overview of Features}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Introduction to Dynamic Clamp}{7}{section.1.3}
+\contentsline {chapter}{\numberline {2}RTXI Features}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}RTXI Menus}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Core System Modules}{16}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}System Control Panel}{17}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Oscilloscope}{18}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Data Recorder}{21}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Connector}{23}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Performance Benchmark}{24}{subsection.2.2.5}
+\contentsline {chapter}{\numberline {3}Getting Started}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Installing User Modules}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}Acquiring Data (Model Cell Tutorial)}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}HDF5 Data Files}{32}{section.3.3}
+\contentsline {chapter}{\numberline {4}RTXI Software Installation}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware Requirements}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Data Acquisition Cards and COMEDI support}{38}{section.4.2}
+\contentsline {section}{\numberline {4.3}Live CD Installation}{41}{section.4.3}
+\contentsline {section}{\numberline {4.4}Manual Installation}{46}{section.4.4}
+\contentsline {section}{\numberline {4.5}RTXI Configuration Options}{60}{section.4.5}
+\contentsline {chapter}{\numberline {5}Writing Custom User Modules}{63}{chapter.5}
+\contentsline {section}{\numberline {5.1}Using the \texttt {DefaultGUIModel} Class}{63}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Creating your own module class}{64}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Edit the Makefile}{64}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Define model parameters, inputs, and outputs}{64}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Initialize the model}{66}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}The execute() loop}{67}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}The update() function}{67}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}DYNAMO Modules}{70}{section.5.2}
+\contentsline {section}{\numberline {5.3}Developing Modules with Custom GUIs}{72}{section.5.3}
+\contentsline {chapter}{\numberline {6}Real-time Performance}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Latency Test}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}Preempt Test}{74}{section.6.2}
+\contentsline {section}{\numberline {6.3}Switches Test}{74}{section.6.3}
+\contentsline {chapter}{\numberline {7}Utilities and Experimental Suites}{76}{chapter.7}
+\contentsline {section}{\numberline {7.1}Signal Utilities}{77}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Signal Generator}{77}{subsection.7.1.1}
+\contentsline {subsubsection}{Overview}{77}{section*.2}
+\contentsline {subsubsection}{Output Channels}{77}{section*.3}
+\contentsline {subsubsection}{Parameters}{78}{section*.4}
+\contentsline {subsubsection}{Tutorial}{78}{section*.5}
+\contentsline {subsection}{\numberline {7.1.2}Mimic}{79}{subsection.7.1.2}
+\contentsline {subsubsection}{Overview}{79}{section*.6}
+\contentsline {subsubsection}{Input Channels}{80}{section*.7}
+\contentsline {subsubsection}{Output Channels}{80}{section*.8}
+\contentsline {subsubsection}{Parameters}{80}{section*.9}
+\contentsline {subsubsection}{Tutorial}{80}{section*.10}
+\contentsline {subsection}{\numberline {7.1.3}Noise Generator}{82}{subsection.7.1.3}
+\contentsline {subsubsection}{Overview}{82}{section*.11}
+\contentsline {subsubsection}{Output Channels}{82}{section*.12}
+\contentsline {subsubsection}{Parameters}{82}{section*.13}
+\contentsline {subsection}{\numberline {7.1.4}Wave Maker}{82}{subsection.7.1.4}
+\contentsline {subsubsection}{Overview}{82}{section*.14}
+\contentsline {subsubsection}{Output Channels}{83}{section*.15}
+\contentsline {subsubsection}{Parameters}{83}{section*.16}
+\contentsline {section}{\numberline {7.2}Filter Utilities}{84}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}FIR Filter}{84}{subsection.7.2.1}
+\contentsline {subsubsection}{Overview}{84}{section*.17}
+\contentsline {subsubsection}{Input Channels}{84}{section*.18}
+\contentsline {subsubsection}{Output Channels}{84}{section*.19}
+\contentsline {subsubsection}{Parameters}{84}{section*.20}
+\contentsline {subsubsection}{States}{85}{section*.21}
+\contentsline {subsection}{\numberline {7.2.2}IIR Filter}{85}{subsection.7.2.2}
+\contentsline {subsubsection}{Overview}{85}{section*.22}
+\contentsline {subsubsection}{Input Channels}{86}{section*.23}
+\contentsline {subsubsection}{Output Channels}{86}{section*.24}
+\contentsline {subsubsection}{Parameters}{86}{section*.25}
+\contentsline {subsubsection}{States}{86}{section*.26}
+\contentsline {section}{\numberline {7.3}Patch Clamp Experimental Suite}{87}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Amplifier Control Modules}{87}{subsection.7.3.1}
+\contentsline {subsubsection}{AM Systems Model 2400}{87}{section*.27}
+\contentsline {subsubsection}{Axon Axopatch 1-D}{87}{section*.28}
+\contentsline {subsubsection}{Axon Axopatch 200 Series}{87}{section*.29}
+\contentsline {subsubsection}{Axon Multiclamp 700 Series}{87}{section*.30}
+\contentsline {subsection}{\numberline {7.3.2}Membrane Test}{87}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Clamp Protocol}{87}{subsection.7.3.3}
+\contentsline {chapter}{Appendix}{88}{chapter*.31}
+\contentsline {chapter}{\numberline {A}Licensing Information}{89}{appendix.A}
+\contentsline {section}{\numberline {A.1}GNU General Public License}{89}{section.A.1}
+\contentsline {section}{\numberline {A.2}GNU Lesser General Public License}{100}{section.A.2}
+\contentsline {chapter}{\numberline {B}DYNAMO Scripting Language}{104}{appendix.B}
+\contentsline {section}{\numberline {B.1}Using DYNAMO with RTXI}{104}{section.B.1}
+\contentsline {section}{\numberline {B.2}Running DYNAMO from the terminal}{104}{section.B.2}
+\contentsline {section}{\numberline {B.3}DYNAMO Syntax}{105}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}Concepts}{105}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Structure of a DYNAMO Model}{105}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Declarations}{106}{subsection.B.3.3}
+\contentsline {subsection}{\numberline {B.3.4}Time Blocks}{108}{subsection.B.3.4}
+\contentsline {subsection}{\numberline {B.3.5}Expressions and Operators in the Modeling Language}{110}{subsection.B.3.5}
+\contentsline {subsection}{\numberline {B.3.6}Mathematical Functions in the Modeling Language}{113}{subsection.B.3.6}
+\contentsline {section}{\numberline {B.4}DYNAMO Example}{114}{section.B.4}
+\contentsline {chapter}{\numberline {C}Information for Developers}{116}{appendix.C}
+\contentsline {section}{\numberline {C.1}RTXI Architecture}{116}{section.C.1}
+\contentsline {section}{\numberline {C.2}Software Requirements}{116}{section.C.2}

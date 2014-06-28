@@ -1,0 +1,58 @@
+% Utilities and Experimental Suites
+\clearpage
+\chapter{Utilities and Experimental Suites}
+Outside the core modules, such as the data recorder, RTXI provides a number of useful utilities and experimental suites. While most utilities are designed as an optional aid, RTXI has a growing library of experimental suites intended to perform complete biological experiments. The experimental suites can be augmented with user-written custom modules to create complex experimental systems outside the intended use of these suites. For RTXI version 1.4, the Patch Clamp Experimental Suite is the only suite currently available. However, a number of other suites, such as a digital camera and imaging suite, are in construction.
+
+% Signals
+\clearpage
+\section{Signal Utilities}
+The signal utilities are modules that can output several types of standard signals. These modules are useful for diagnostic purposes, such as testing a data acquisition board, or can be used as part of an experimental protocol, such as white noise injection into a neuronal network.
+
+\subsection{Signal Generator}
+\input{./utilities/siggen}
+
+\subsection{Mimic}
+\input{./utilities/mimic}
+
+\subsection{Noise Generator}
+\input{./utilities/noisegen}
+
+\subsection{Wave Maker}
+\input{./utilities/wavemaker}
+
+% Filters
+\clearpage
+\section{Filter Utilities}
+RTXI provides modules to filter incoming signal, which are most commonly used for analog signals received through a data acquisition board. 
+
+\subsection{FIR Filter}
+\input{./utilities/firfilter}
+
+\subsection{IIR Filter}
+\input{./utilities/iirfilter}
+
+% Patch Clamp Experimental Suite
+\clearpage
+\section{Patch Clamp Experimental Suite}
+The patch clamp experimental suite is a group of modules designed to aid an electrophysiologist during patch clamping. The suite includes modules for interfacing with patch clamp amplifiers, monitoring electrode resistance during gigaseal formation, and running voltage clamp experiments.
+
+\subsection{Amplifier Control Modules}
+\input{./utilities/ampcontrol}
+
+\subsubsection{AM Systems Model 2400}
+\input{./utilities/am2400}
+
+\subsubsection{Axon Axopatch 1-D}
+\input{./utilities/axon1d}
+
+\subsubsection{Axon Axopatch 200 Series}
+\input{./utilities/axon200}
+
+\subsubsection{Axon Multiclamp 700 Series}
+\input{./utilities/axon700}
+
+\subsection{Membrane Test}
+\input{./utilities/membranetest}
+
+\subsection{Clamp Protocol}
+\input{./utilities/clampprotocol}

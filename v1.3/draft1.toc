@@ -1,0 +1,54 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {1.1}About RTXI}{5}
+\contentsline {section}{\numberline {1.2}Overview of Features}{6}
+\contentsline {section}{\numberline {1.3}Introduction to Dynamic Clamp}{6}
+\contentsline {chapter}{\numberline {2}RTXI Features}{11}
+\contentsline {section}{\numberline {2.1}RTXI Menus}{16}
+\contentsline {section}{\numberline {2.2}Core System Modules}{17}
+\contentsline {subsection}{\numberline {2.2.1}System Control Panel}{17}
+\contentsline {subsection}{\numberline {2.2.2}Oscilloscope}{19}
+\contentsline {subsection}{\numberline {2.2.3}Data Recorder}{22}
+\contentsline {subsection}{\numberline {2.2.4}Connector}{23}
+\contentsline {subsection}{\numberline {2.2.5}Performance Benchmark}{23}
+\contentsline {chapter}{\numberline {3}Getting Started}{31}
+\contentsline {section}{\numberline {3.1}Installing User Modules}{31}
+\contentsline {section}{\numberline {3.2}Acquiring Data (Model Cell Tutorial)}{31}
+\contentsline {section}{\numberline {3.3}HDF5 Data Files}{37}
+\contentsline {chapter}{\numberline {4}RTXI Software Installation}{43}
+\contentsline {section}{\numberline {4.1}Hardware Requirements}{44}
+\contentsline {section}{\numberline {4.2}Data Acquisition Cards and COMEDI support}{44}
+\contentsline {section}{\numberline {4.3}Live CD Installation}{47}
+\contentsline {section}{\numberline {4.4}Manual Installation}{52}
+\contentsline {section}{\numberline {4.5}RTXI Configuration Options}{66}
+\contentsline {chapter}{\numberline {5}Writing Custom User Modules}{69}
+\contentsline {section}{\numberline {5.1}Using the \texttt {DefaultGUIModel} Class}{69}
+\contentsline {subsection}{\numberline {5.1.1}Creating your own module class}{69}
+\contentsline {subsection}{\numberline {5.1.2}Edit the Makefile}{70}
+\contentsline {subsection}{\numberline {5.1.3}Define model parameters, inputs, and outputs}{70}
+\contentsline {subsection}{\numberline {5.1.4}Initialize the model}{72}
+\contentsline {subsection}{\numberline {5.1.5}The execute() loop}{73}
+\contentsline {subsection}{\numberline {5.1.6}The update() function}{73}
+\contentsline {section}{\numberline {5.2}DYNAMO Modules}{76}
+\contentsline {section}{\numberline {5.3}Developing Modules with Custom GUIs}{78}
+\contentsline {chapter}{\numberline {6}Real-time Performance}{79}
+\contentsline {section}{\numberline {6.1}Latency Test}{79}
+\contentsline {section}{\numberline {6.2}Preempt Test}{80}
+\contentsline {section}{\numberline {6.3}Switches Test}{80}
+\contentsline {chapter}{Appendix}{82}
+\contentsline {chapter}{\numberline {A}Licensing Information}{83}
+\contentsline {section}{\numberline {A.1}GNU General Public License}{83}
+\contentsline {section}{\numberline {A.2}GNU Lesser General Public License}{94}
+\contentsline {chapter}{\numberline {B}DYNAMO Scripting Language}{98}
+\contentsline {section}{\numberline {B.1}Using DYNAMO with RTXI}{98}
+\contentsline {section}{\numberline {B.2}Running DYNAMO from the terminal}{98}
+\contentsline {section}{\numberline {B.3}DYNAMO Syntax}{99}
+\contentsline {subsection}{\numberline {B.3.1}Concepts}{99}
+\contentsline {subsection}{\numberline {B.3.2}Structure of a DYNAMO Model}{99}
+\contentsline {subsection}{\numberline {B.3.3}Declarations}{100}
+\contentsline {subsection}{\numberline {B.3.4}Time Blocks}{102}
+\contentsline {subsection}{\numberline {B.3.5}Expressions and Operators in the Modeling Language}{104}
+\contentsline {subsection}{\numberline {B.3.6}Mathematical Functions in the Modeling Language}{107}
+\contentsline {section}{\numberline {B.4}DYNAMO Example}{108}
+\contentsline {chapter}{\numberline {C}Information for Developers}{110}
+\contentsline {section}{\numberline {C.1}RTXI Architecture}{110}
+\contentsline {section}{\numberline {C.2}Software Requirements}{110}

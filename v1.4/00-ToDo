@@ -1,0 +1,31 @@
+Update system control panel documentation to include calibration
+
+
+Add documentation for 'Utilities' *** Proposed outline for menu ***
+     Synch
+     Filters ->
+             FIR (Finished)
+             IIR (Finished)
+     Signals ->
+             Signal Generator (Finished w/ Tutorial)
+             Noise Generator (Finished)
+             Mimic (Finished w/ Tutorial)
+             Wave Maker (Finished)
+     Electrophysiology ->
+                       Models -> *** Generic description of electrophysiology models instead of specifics ***
+                              Neuronal ->
+                                       Hodgkin-Huxley (pushed to next version)
+                                       Connor-Stevens (pushed to next version)
+                              Cardiac ->
+                                      Faber-Rudy (pushed to next version)
+                                      Livshitz-Rudy (pushed to next version)
+                                      Ohara (pushed to next version)
+                       Patch Clamp ->
+                                              Amplifier Control ->
+                                                        AM Systems
+                                                        Axon 1-D
+                                                        Axon 200A/B
+                                                        Axon 700A/B
+                                              Patch Clamp ->
+                                                    Membrane Test (formerly Clamp Utilities)
+                                                    Clamp Protocol (formerly Clamp Suite)

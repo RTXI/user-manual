@@ -1,0 +1,1414 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.24)  17 DEC 2012 15:46
+entering extended mode
+ %&-line parsing enabled.
+**\input user-guide.tex
+(./user-guide.tex (/usr/share/texmf-texlive/tex/latex/refman/refrep.cls
+Document Class: refrep 2006/11/13 v2.0e LaTeX document class
+\papermarginwidth=\skip41
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\leftmarginwidth=\dimen102
+\fullwidth=\dimen103
+\emptyfoottopmargin=\dimen104
+\emptyheadtopmargin=\dimen105
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\bibindent=\dimen106
+)
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen109
+\epsfysize=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen111
+\Hy@linkcounter=\count89
+\Hy@pagecounter=\count90
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `bookmarks' set `true' on input line 2864.
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count91
+\Field@Width=\dimen112
+\Fld@charsize=\dimen113
+\Field@toks=\toks15
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count92
+\c@Item=\count93
+\c@Hfootnote=\count94
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count95
+)
+\@indexfile=\write3
+\openout3 = `user-guide.idx'.
+
+
+Writing index file user-guide.idx
+
+LaTeX Warning: Unused global option(s):
+    [letter].
+
+(./user-guide.aux
+
+LaTeX Warning: Label `wavemaker' multiply defined.
+
+
+LaTeX Warning: Label `firfilter' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
+\openout1 = `user-guide.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 40.
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen114
+\scratchbox=\box26
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen115
+\MPnumerator=\count100
+\everyMPtoPDFconversion=\toks17
+)
+Package hyperref Info: Link coloring OFF on input line 40.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count101
+)
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+ (./user-guide.out)
+(./user-guide.out)
+\@outlinefile=\write4
+\openout4 = `user-guide.out'.
+
+\AtBeginShipoutBox=\box27
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 43.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 43.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 43.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./user-guide.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+ [3
+
+] [4])
+\tf@toc=\write5
+\openout5 = `user-guide.toc'.
+
+ [5]
+ 1.
+
+LaTeX Warning: Citation `Culianu:2001fk' on page 6 undefined on input line 78.
+
+
+LaTeX Warning: Citation `Culianu:2002uq' on page 6 undefined on input line 78.
+
+
+LaTeX Warning: Citation `Dorval:2001p940' on page 6 undefined on input line 78.
+
+
+
+LaTeX Warning: Citation `Butera:2001p910' on page 6 undefined on input line 78.
+
+
+
+LaTeX Warning: Citation `Raikov:2004p1166' on page 6 undefined on input line 78
+.
+
+
+LaTeX Warning: Citation `RTAI:vn' on page 6 undefined on input line 80.
+
+
+LaTeX Warning: Citation `COMEDI:uq' on page 6 undefined on input line 80.
+
+[6
+
+] [7]
+
+pdfTeX warning: pdflatex (file ./images/dclampcircuit.pdf): PDF inclusion: foun
+d PDF version <1.5>, but at most version <1.4> allowed
+<./images/dclampcircuit.pdf, id=390, 713.66624pt x 355.61557pt>
+File: ./images/dclampcircuit.pdf Graphic file (type pdf)
+
+<use ./images/dclampcircuit.pdf> [8 <./images/dclampcircuit.pdf>]
+
+LaTeX Warning: Citation `Wilders:2006p930' on page 9 undefined on input line 14
+1.
+
+
+LaTeX Warning: Citation `Robinson:1993p1193' on page 9 undefined on input line 
+141.
+
+
+LaTeX Warning: Citation `Sharp:1993p983' on page 9 undefined on input line 141.
+
+
+
+LaTeX Warning: Citation `Economo:2010p1795' on page 9 undefined on input line 1
+41.
+
+
+LaTeX Warning: Citation `Prinz:2004p985' on page 9 undefined on input line 141.
+
+
+
+LaTeX Warning: Citation `Goaillard:2006p1175' on page 9 undefined on input line
+ 141.
+
+
+LaTeX Warning: Citation `Chance:2002p1075' on page 9 undefined on input line 14
+3.
+
+
+LaTeX Warning: Citation `Destexhe:2003p1021' on page 9 undefined on input line 
+143.
+
+
+LaTeX Warning: Citation `Sceniak:2010p1258' on page 9 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation `Wolfart:2005p1138' on page 9 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation `Steriade:2001p4667' on page 9 undefined on input line 
+143.
+
+
+LaTeX Warning: Citation `Rudolph:2003p4555' on page 9 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation `Destexhe:2001p1044' on page 9 undefined on input line 
+143.
+
+
+LaTeX Warning: Citation `Tiesinga:2000p1134' on page 9 undefined on input line 
+143.
+
+
+LaTeX Warning: Citation `Rudolph:2003p4554' on page 9 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation `Kumar:2008p4586' on page 9 undefined on input line 143
+.
+
+
+LaTeX Warning: Citation `Salinas:2000p4826' on page 9 undefined on input line 1
+43.
+
+
+LaTeX Warning: Citation `Hughes:2008p993' on page 9 undefined on input line 145
+.
+
+
+LaTeX Warning: Citation `Brizzi:2004p935' on page 9 undefined on input line 145
+.
+
+
+LaTeX Warning: Citation `Jaeger:1999p1094' on page 9 undefined on input line 14
+5.
+
+
+LaTeX Warning: Citation `Preyer:2007p359' on page 9 undefined on input line 145
+.
+
+
+LaTeX Warning: Citation `Preyer:2009p1228' on page 9 undefined on input line 14
+5.
+
+
+LaTeX Warning: Citation `Golowasch:2002p5763' on page 9 undefined on input line
+ 145.
+
+[9]
+
+LaTeX Warning: Citation `Butera:2004p1073' on page 10 undefined on input line 1
+47.
+
+
+LaTeX Warning: Citation `Milescu:2008p1216' on page 10 undefined on input line 
+147.
+
+
+LaTeX Warning: Citation `Bettencourt:2008p1114' on page 10 undefined on input l
+ine 149.
+
+
+LaTeX Warning: Citation `Butera:2001p910' on page 10 undefined on input line 14
+9.
+
+
+LaTeX Warning: Citation `Preyer:2007p359' on page 10 undefined on input line 14
+9.
+
+
+LaTeX Warning: Citation `Preyer:2009p1228' on page 10 undefined on input line 1
+49.
+
+[10]
+ 2.
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+<./images/module_ex1.png, id=418, 565.1514pt x 149.8398pt>
+File: ./images/module_ex1.png Graphic file (type png)
+
+<use ./images/module_ex1.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11
+
+] <./images/module_ex2.png, id=425, 544.1931pt x 276.5532pt>
+File: ./images/module_ex2.png Graphic file (type png)
+
+<use ./images/module_ex2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./images/module_ex1.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 186.
+
+
+LaTeX Warning: Reference `Workflow 2' on page 13 undefined on input line 188.
+
+[13 <./images/module_ex2.png>] [14]
+<./images/fileMenu.png, id=449, 426.59375pt x 161.60374pt>
+File: ./images/fileMenu.png Graphic file (type png)
+
+<use ./images/fileMenu.png>
+<./images/modulesMenu.png, id=450, 426.59375pt x 353.32pt>
+File: ./images/modulesMenu.png Graphic file (type png)
+
+<use ./images/modulesMenu.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./images/fileMenu.png (PNG copy)>]
+<./images/systemMenu.png, id=456, 426.59375pt x 194.7275pt>
+File: ./images/systemMenu.png Graphic file (type png)
+
+<use ./images/systemMenu.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/helpMenu.png, id=457, 426.59375pt x 146.5475pt>
+File: ./images/helpMenu.png Graphic file (type png)
+
+<use ./images/helpMenu.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [16 <./images/modulesMenu.png (PNG copy)>]
+<./images/systemcontrol0.png, id=464, 407.5225pt x 275.0275pt>
+File: ./images/systemcontrol0.png Graphic file (type png)
+
+<use ./images/systemcontrol0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17 <./images/systemMenu.png (PNG copy)> <./images/helpMenu.png (PNG copy)>]
+<./images/systemcontrol1.png, id=473, 409.53pt x 275.0275pt>
+File: ./images/systemcontrol1.png Graphic file (type png)
+
+<use ./images/systemcontrol1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/oscilloscope0.png, id=474, 807.015pt x 473.77pt>
+File: ./images/oscilloscope0.png Graphic file (type png)
+
+<use ./images/oscilloscope0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no Ò in font cmr10!
+[18 <./images/systemcontrol0.png (PNG copy)>]
+<./images/oscilloscope1.png, id=482, 521.95pt x 313.17pt>
+File: ./images/oscilloscope1.png Graphic file (type png)
+
+<use ./images/oscilloscope1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./images/systemcontrol1.png (PNG copy)>]
+Missing character: There is no Õ in font cmr10!
+
+<./images/oscilloscope2.png, id=489, 521.95pt x 313.17pt>
+File: ./images/oscilloscope2.png Graphic file (type png)
+
+<use ./images/oscilloscope2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./images/oscilloscope0.png (PNG copy)>]
+<./images/oscilloscope3.png, id=495, 403.5075pt x 310.15875pt>
+File: ./images/oscilloscope3.png Graphic file (type png)
+
+<use ./images/oscilloscope3.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./images/oscilloscope1.png (PNG copy)> <./images/oscilloscope2.png (PNG co
+py)>] <./images/datarecorder.png, id=502, 556.0775pt x 283.0575pt>
+File: ./images/datarecorder.png Graphic file (type png)
+
+<use ./images/datarecorder.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 331
+.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [22 <./images/oscilloscope3.png (PNG copy)>] <./images/connector1.png, id=509
+, 554.07pt x 191.71625pt>
+File: ./images/connector1.png Graphic file (type png)
+
+<use ./images/connector1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no Õ in font cmr10!
+[23 <./images/datarecorder.png (PNG copy)>]
+<./images/connector.png, id=515, 610.28pt x 203.76125pt>
+File: ./images/connector.png Graphic file (type png)
+
+<use ./images/connector.png>
+<./images/performancebenchmark0.png, id=516, 303.1325pt x 135.50626pt>
+File: ./images/performancebenchmark0.png Graphic file (type png)
+
+<use ./images/performancebenchmark0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./images/connector1.png (PNG copy)> <./images/connector.png (PNG copy)>]
+[25 <./images/performancebenchmark0.png (PNG copy)>]
+ 3.
+
+Overfull \hbox (12.55505pt too wide) in paragraph at lines 387--388
+[]\OT1/cmr/m/n/10 Example user mod-ules are avail-able on the RTXI web-site (ht
+tp://www.rtxi.org)
+ []
+
+
+Overfull \hbox (22.8873pt too wide) in paragraph at lines 394--395
+[]\OT1/cmr/m/n/10 The RTXI ob-ject li-brary (*.so ex-ten-sion) will be copied t
+o \OT1/cmtt/m/n/10 /usr/local/lib/rtxi\OT1/cmr/m/n/10 ,
+ []
+
+[26
+
+]
+Overfull \hbox (35.52608pt too wide) in paragraph at lines 411--412
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo comedi[]calibrate --reset --dump --c
+alibrate --results
+ []
+
+<./images/axoclamptutorial0.png, id=537, 407.5225pt x 275.0275pt>
+File: ./images/axoclamptutorial0.png Graphic file (type png)
+
+<use ./images/axoclamptutorial0.png> [27 <./images/axoclamptutorial0.png>]
+<./images/axoclamptutorial1.png, id=544, 407.5225pt x 275.0275pt>
+File: ./images/axoclamptutorial1.png Graphic file (type png)
+
+<use ./images/axoclamptutorial1.png>
+<./images/axoclamptutorial2.png, id=545, 407.5225pt x 275.0275pt>
+File: ./images/axoclamptutorial2.png Graphic file (type png)
+
+<use ./images/axoclamptutorial2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/istep.png, id=547, 244.915pt x 227.85126pt>
+File: ./images/istep.png Graphic file (type png)
+ <use ./images/istep.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [28 <./images/axoclamptutorial1.png>]
+File: ./images/oscilloscope1.png Graphic file (type png)
+ <use ./images/oscilloscope1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29 <./images/axoclamptutorial2.png> <./images/istep.png (PNG copy)>]
+File: ./images/connector1.png Graphic file (type png)
+
+<use ./images/connector1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `balancedbridge' on page 30 undefined on input line 48
+7.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+<./images/axoclamptutorial3.png, id=568, 602.25pt x 353.32pt>
+File: ./images/axoclamptutorial3.png Graphic file (type png)
+
+<use ./images/axoclamptutorial3.png>
+<./images/axoclamptutorial4.png, id=569, 556.0775pt x 283.0575pt>
+File: ./images/axoclamptutorial4.png Graphic file (type png)
+
+<use ./images/axoclamptutorial4.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31 <./images/axoclamptutorial3.png (PNG copy)>]
+
+LaTeX Warning: Reference `HDF5 structure' on page 32 undefined on input line 51
+8.
+
+[32 <./images/axoclamptutorial4.png (PNG copy)>]
+
+LaTeX Warning: Marginpar on page 33 moved.
+
+
+LaTeX Warning: Reference `HDF5 structure' on page 33 undefined on input line 52
+4.
+
+[33] <./images/axoclamptutorial5.png, id=587, 697.60625pt x 766.865pt>
+File: ./images/axoclamptutorial5.png Graphic file (type png)
+
+<use ./images/axoclamptutorial5.png>
+Overfull \hbox (0.75499pt too wide) in paragraph at lines 529--530
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34
+
+ <./images/axoclamptutorial5.png (PNG copy)>]
+<./images/axoclamptutorial6.png, id=593, 787.94376pt x 447.6725pt>
+File: ./images/axoclamptutorial6.png Graphic file (type png)
+
+<use ./images/axoclamptutorial6.png>
+Overfull \hbox (0.75499pt too wide) in paragraph at lines 553--554
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35] [36 <./images/axoclamptutorial6.png (PNG copy)>]
+ 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+[]$[] [] []$\OT1/cmtt/m/n/10 : RTAI CONFIGURED WITH LESS THAN
+ []
+
+[37
+
+] [38]
+Overfull \hbox (27.1651pt too wide) in paragraph at lines 607--608
+\OT1/cmr/m/n/10 plete list of COMEDI sup-ported DAQ cards is avail-able at http
+://www.comedi.org.
+ []
+
+[39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 688--688
+[]\OT1/cmtt/m/n/10 <OBJECT component="plugin" library="comedi[]driver.so"
+ []
+
+
+Overfull \hbox (35.52608pt too wide) in paragraph at lines 713--714
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo comedi[]calibrate --reset --dump --c
+alibrate --results
+ []
+
+[41
+
+
+] <./images/Usb-creator.png, id=630, 301.125pt x 314.67563pt>
+File: ./images/Usb-creator.png Graphic file (type png)
+
+<use ./images/Usb-creator.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42]
+Missing character: There is no Õ in font cmr10!
+ <./images/livecd1.png, id=637, 602.25pt x 507.8975pt>
+File: ./images/livecd1.png Graphic file (type png)
+
+<use ./images/livecd1.png> [43 <./images/Usb-creator.png>]
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no Õ in font cmr10!
+ [44 <./images/livecd1.png>]
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+ <./images/livecd2.png, id=657, 602.25pt x 451.6875pt>
+File: ./images/livecd2.png Graphic file (type png)
+
+<use ./images/livecd2.png>
+Missing character: There is no Õ in font cmr10!
+ [45 <./images/livecd2.png>] [46]
+Overfull \hbox (19.24637pt too wide) in paragraph at lines 820--820
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo apt-get install cvs subversion build
+-essential 
+ []
+
+
+Overfull \hbox (3.4965pt too wide) in paragraph at lines 821--821
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo apt-get install kernel-package linux
+-source 
+ []
+
+
+Overfull \hbox (29.74628pt too wide) in paragraph at lines 822--822
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo apt-get install libncurses5-dev libt
+ool automake 
+ []
+
+
+Overfull \hbox (13.23259pt too wide) in paragraph at lines 825--826
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo apt-get install libboost-program-opt
+ions-dev[][][] 
+ []
+
+
+Overfull \hbox (19.24637pt too wide) in paragraph at lines 835--835
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo cvs -d:pserver:anonymous@cvs.gna.org
+:/cvs/rtai
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 840--847
+[][]$[]$ 
+ []
+
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [47]
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+
+Overfull \hbox (32.49489pt too wide) in paragraph at lines 876--877
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo patch -p1 < /opt/rtai/base/arch/x86/
+patches/hal-linux-2.6.28.9-x86-2.2.07.patch 
+ []
+
+[48] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 912--912
+[] \OT1/cmtt/m/n/10 Set "Local version - append to kernel release" to "-adeos"
+ []
+
+Missing character: There is no Ò in font cmtt8!
+Missing character: There is no Ò in font cmtt10!
+Missing character: There is no Ó in font cmtt10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--922
+[] \OT1/cmtt/m/n/10 Processor family to Pentium-4/Celeron/Pentium-4 M/older Xeo
+n
+ []
+
+
+Overfull \hbox (166.00003pt too wide) in paragraph at lines 909--953
+[][]$[]$ 
+ []
+
+[50
+
+]
+Missing character: There is no Õ in font cmr10!
+
+Overfull \hbox (16.30637pt too wide) in paragraph at lines 959--960
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo make-kpkg --initrd kernel[]image ker
+nel[]headers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
+[]\OT1/cmtt/m/n/10 dpkg-deb: control directory has bad permissions
+ []
+
+Missing character: There is no Ð in font cmtt10!
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 973--979
+[][]$[]$ 
+ []
+
+Missing character: There is no Õ in font cmr8!
+Missing character: There is no Õ in font cmr8!
+[51
+
+]
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 997--1009
+[][]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1014
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo ./configure --with-linux-dir=/usr/sr
+c/linux --enable-testsuite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1024
+[]\OT1/cmtt/m/n/10 ../../../base/include/asm/rtai[]leds.h:24:20: error: asm/io.
+h: No such file or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1026
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo ./configure --with-linux-dir=/usr/sr
+c/linux --enable-testsuite
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1051
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 svn co https://rtxi.svn.sourceforge.net/s
+vnroot/rtxi/trunk/comedilib
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 svn co https://rtxi.svn.sourceforge.net/s
+vnroot/rtxi/trunk/comedi[]calibrate
+ []
+
+[53]
+Overfull \hbox (33.83269pt too wide) in paragraph at lines 1085--1086
+[]\OT1/cmr/m/n/10 Under Ubuntu 9.10, con-fig-ure may fail and give a \OT1/cmtt/
+m/n/10 libboost-program-options
+ []
+
+Missing character: There is no Ð in font cmtt10!
+Missing character: There is no Ð in font cmtt10!
+
+Overfull \hbox (26.62013pt too wide) in paragraph at lines 1098--1099
+\OT1/cmr/m/n/10 ning with \OT1/cmtt/m/n/10 comedi[]soft[]calibrate[]LDADD\OT1/c
+mr/m/n/10 , change \OT1/cmtt/m/n/10 lboost[]program[]options
+ []
+
+
+Overfull \hbox (45.49614pt too wide) in paragraph at lines 1108--1109
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo cp include/linux/comedi.h include/li
+nux/comedilib.h
+ []
+
+
+Overfull \hbox (18.83852pt too wide) in paragraph at lines 1111--1112
+[]\OT1/cmr/m/n/10 To cal-i-brate your card, use \OT1/cmtt/m/n/10 comedi[]calibr
+ate\OT1/cmr/m/n/10 , or \OT1/cmtt/m/n/10 comedi[]soft[]calibrate
+ []
+
+
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 1122--1135
+[][]$[]$ 
+ []
+
+
+Underfull \vbox (badness 5446) has occurred while \output is active []
+
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1141
+[]\TS1/cmtt/m/n/10 $ \OT1/cmtt/m/n/10 sudo ./configure --with-linux-dir=/usr/sr
+c/linux --enable-testsuite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1140--1141
+\OT1/cmtt/m/n/10 --disable-rtailab --disable-leds --enable-comedi-lxrt
+ []
+
+[55]
+Missing character: There is no Õ in font cmr10!
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
+ [56]
+Missing character: There is no Õ in font cmr8!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+[]\OT1/cmtt/m/n/10 Currently, the "trunk" branch of the RTXI repository is vers
+ion 1.2. It
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+\OT1/cmtt/m/n/10 contains snapshots of the COMEDI, COMEDILIB, and COMEDI[]CALIB
+RATE source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1246
+\OT1/cmtt/m/n/10 code that were used for the Ubuntu 9.10 Live CD and for manual
+ installations
+ []
+
+
+Underfull \vbox (badness 4441) has occurred while \output is active []
+
+ [57]
+Missing character: There is no Õ in font cmr10!
+Missing character: There is no Ð in font cmtt10!
+Missing character: There is no Ð in font cmtt10!
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+
+[58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+[]\OT1/cmtt/m/n/10 Usage: ./configure [OPTION]... [VAR=VALUE]...To assign envir
+onment variables
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+\OT1/cmtt/m/n/10 (e.g., CC, CFLAGS...), specify them as VAR=VALUE. See below fo
+r descriptions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
+\OT1/cmtt/m/n/10 of some of the useful variables. Defaults for the options are 
+specified in
+ []
+
+
+Overfull \hbox (9.24657pt too wide) in paragraph at lines 1350--1355
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1360
+[]\OT1/cmtt/m/n/10 By default, `make install' will install all the files in `/u
+sr/local/bin',
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1360
+\OT1/cmtt/m/n/10 `/usr/local/lib' etc. You can specify an installation prefix o
+ther than
+ []
+
+
+Overfull \hbox (30.24638pt too wide) in paragraph at lines 1417--1433
+[][] 
+ []
+
+
+Overfull \hbox (45.99625pt too wide) in paragraph at lines 1435--1444
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+Overfull \hbox (14.49652pt too wide) in paragraph at lines 1449--1462
+[][] 
+ []
+
+
+Overfull \hbox (19.74648pt too wide) in paragraph at lines 1464--1478
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1481
+[]\OT1/cmtt/m/n/10 Use these variables to override the choices made by `configu
+re' or to help it
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+[62]
+ 5.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1492.
+
+<./images/hhneuron.png, id=816, 244.915pt x 338.26375pt>
+File: ./images/hhneuron.png Graphic file (type png)
+
+<use ./images/hhneuron.png> [63
+
+ <./images/hhneuron.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 153
+8.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 1538.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 1538.
+
+[64] [65]
+Underfull \hbox (badness 10000) in paragraph at lines 1580--1580
+[] \OT1/cmtt/m/n/10 refresh(); // refreshes the GUI to reflect parameter values
+ stored in
+ []
+
+[66]
+Overfull \hbox (2.4506pt too wide) in paragraph at lines 1600--1600
+[] \OT1/cmtt/m/n/10 solve(period / steps, y); // integrate equations 
+ []
+
+[67]
+Overfull \hbox (22.0874pt too wide) in paragraph at lines 1637--1638
+[]\OT1/cmtt/m/n/10 YOUR[]VARIABLE = getParameter("YOUR[]GUI[]LABEL").toDouble()
+; 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Overfull \hbox (10.74754pt too wide) in paragraph at lines 1727--1728
+[]\OT1/cmtt/m/n/10 STATE x = 0.1 "gating variable for inward conductance"; 
+ []
+
+[70]
+Overfull \hbox (5.49759pt too wide) in paragraph at lines 1739--1740
+[]\OT1/cmtt/m/n/10 STATE x = 0.1 METHOD "mau" "gating variable for inward
+ []
+
+[71] [72]
+ 6.
+Missing character: There is no Õ in font cmr10!
+[73
+
+]
+Missing character: There is no Ò in font cmr10!
+Missing character: There is no Ó in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1860--1861
+[]\OT1/cmtt/m/n/10 Nov 11 20:49:02 dynamic kernel: [ 9006.244009] FOR 10 TASKS:
+ TIME 14 (MS),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1862--1863
+[]\OT1/cmtt/m/n/10 Nov 11 20:49:02 dynamic kernel: [ 9006.244009] FOR 10 TASKS:
+ TIME 14 (MS), SEM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1864--1865
+[]\OT1/cmtt/m/n/10 Nov 11 20:49:02 dynamic kernel: [ 9006.244009] FOR 10 TASKS:
+ TIME 14 (MS),
+ []
+
+(./utilities.tex [74] [75]
+ 7.
+[76
+
+
+] (./utilities/siggen.tex
+<./images/siggen-tutorial1.png, id=888, 248.93pt x 258.9675pt>
+File: ./images/siggen-tutorial1.png Graphic file (type png)
+
+<use ./images/siggen-tutorial1.png> [77
+
+ <./images/siggen-tutorial1.png (PNG copy)>]
+Overfull \hbox (57.24571pt too wide) in paragraph at lines 48--49
+[]\OT1/cmr/m/n/10 Open the Sig-nal Gen-er-a-tor mod-ule through the menu: \OT1/
+cmr/bx/n/10 Util-i-ties$\OMS/cmtt/m/n/10 !$\OT1/cmr/bx/n/10 Signals$\OMS/cmtt/m
+/n/10 !$\OT1/cmr/bx/n/10 Signal
+ []
+
+
+Overfull \hbox (16.12212pt too wide) in paragraph at lines 49--50
+[]\OT1/cmr/m/n/10 Open the os-cil-lo-scope mod-ule through the menu: \OT1/cmr/b
+x/n/10 Sys-tem$\OMS/cmtt/m/n/10 !$[]\OT1/cmr/bx/n/10 Oscilloscope 
+ []
+
+[78]
+Overfull \hbox (21.16109pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10 Open the con-nec-tor mod-ule through the menu: \OT1/cmr/bx/n/
+10 Sys-tem$\OMS/cmtt/m/n/10 !$\OT1/cmr/bx/n/10 Connector 
+ []
+
+<./images/siggen-tutorial2.png, id=913, 807.015pt x 473.77pt>
+File: ./images/siggen-tutorial2.png Graphic file (type png)
+
+<use ./images/siggen-tutorial2.png>) (./utilities/mimic.tex
+<./images/mimic.png, id=914, 798.985pt x 364.36125pt>
+File: ./images/mimic.png Graphic file (type png)
+ <use ./images/mimic.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[79 <./images/siggen-tutorial2.png (PNG copy)>]
+Overfull \hbox (57.65613pt too wide) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/10 Open up a Mimic mod-ule through the menu: \OT1/cmr/bx/n/10 Ut
+il-i-ties$\OMS/cmtt/m/n/10 !$\OT1/cmr/bx/n/10 Signals$\OML/cmm/m/it/10 rightarr
+ow$\OT1/cmr/bx/n/10 Mimic 
+ []
+
+[80 <./images/mimic.png (PNG copy)>]
+<./images/mimic2.png, id=941, 905.3825pt x 430.60875pt>
+File: ./images/mimic2.png Graphic file (type png)
+
+<use ./images/mimic2.png>) (./utilities/noisegen.tex
+<./images/noisegen.png, id=943, 244.915pt x 218.8175pt>
+File: ./images/noisegen.png Graphic file (type png)
+
+<use ./images/noisegen.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[81 <./images/mimic2.png (PNG copy)>]) (./utilities/wavemaker.tex
+<./images/wavemaker.png, id=953, 244.915pt x 223.83624pt>
+File: ./images/wavemaker.png Graphic file (type png)
+
+<use ./images/wavemaker.png> [82 <./images/noisegen.png (PNG copy)> <./images/w
+avemaker.png (PNG copy)>]) [83] (./utilities/firfilter.tex
+<./images/FIRwindow.png, id=971, 253.94875pt x 252.945pt>
+File: ./images/FIRwindow.png Graphic file (type png)
+
+<use ./images/FIRwindow.png>
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [84
+
+ <./images/FIRwindow.png (PNG copy)>])
+(./utilities/iirfilter.tex
+<./images/IIRfilter.png, id=981, 349.305pt x 337.26pt>
+File: ./images/IIRfilter.png Graphic file (type png)
+
+<use ./images/IIRfilter.png> [85 <./images/IIRfilter.png (PNG copy)>]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+) [86]
+(./utilities/ampcontrol.tex) (./utilities/am2400.tex) (./utilities/axon1d.tex)
+(./utilities/axon200.tex) (./utilities/axon700.tex)
+(./utilities/membranetest.tex) (./utilities/clampprotocol.tex))
+(./appendices.tex [87
+
+] [88
+
+
+]
+Appendix A.
+(./gnuGPL.tex [89
+
+] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99])
+(./gnuLGPL.tex [100] [101] [102]) [103]
+Appendix B.
+[104
+
+] [105]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+[]\OT1/cmtt/m/n/10 VECTOR PARAMETER \OT1/cmtt/m/it/10 name \OT1/cmtt/m/n/10 = (
+ \OT1/cmtt/m/it/10 element0\OT1/cmtt/m/n/10 , \OT1/cmtt/m/it/10 element1\OT1/cm
+tt/m/n/10 , ... )
+ []
+
+
+Overfull \hbox (10.74754pt too wide) in paragraph at lines 178--179
+[]\OT1/cmtt/m/n/10 STATE x = 0.1 "gating variable for inward conductance"; 
+ []
+
+[106]
+Overfull \hbox (5.49759pt too wide) in paragraph at lines 202--204
+[]\OT1/cmtt/m/n/10 STATE x = 0.1 METHOD "mau" "gating variable for inward
+ []
+
+
+Overfull \hbox (71.96927pt too wide) in paragraph at lines 214--215
+[]\OT1/cmtt/m/n/10 VECTOR STATE \OT1/cmtt/m/it/10 name \OT1/cmtt/m/n/10 = ( \OT
+1/cmtt/m/it/10 initial0\OT1/cmtt/m/n/10 , \OT1/cmtt/m/it/10 initial1\OT1/cmtt/m
+/n/10 , ... ) ``\OT1/cmtt/m/it/10 description\OT1/cmtt/m/n/10 ''; 
+ []
+
+
+Overfull \hbox (0.24763pt too wide) in paragraph at lines 228--229
+[]\OT1/cmtt/m/n/10 DISCRETE STATE status = ( inactive, threshold, active
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+[]\OT1/cmtt/m/n/10 DISCRETE STATE status = ( inactive=5, threshold=10,
+ []
+
+[107]
+Overfull \hbox (10.74754pt too wide) in paragraph at lines 297--300
+[]\OT1/cmtt/m/n/10 TABLE FUNCTION F1(v) = (1 + tanh(v)), LOW = -10.1, HIGH
+ []
+
+[108] [109] [110] [111] [112
+
+
+] [113]
+Underfull \hbox (badness 10000) in paragraph at lines 573--580
+[]\OT1/cmtt/m/n/10 /* This model is used to calculate the membrane potential as
+suming some initial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--580
+\OT1/cmtt/m/n/10 state. The calculation is based on sodium ion flow, potassium 
+ion flow and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--580
+\OT1/cmtt/m/n/10 leakage ion flow. (Hodgkin, A. L. and Huxley, A. F. (1952) "A 
+Quantitative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--580
+\OT1/cmtt/m/n/10 Description of Membrane Current and its Application to Conduct
+ion and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114]
+[115]
+Appendix C.
+(./developerinfo.tex
+<./images/RTXI_Block_Diagram.png, id=1129, 662.475pt x 511.9125pt>
+File: ./images/RTXI_Block_Diagram.png Graphic file (type png)
+
+<use ./images/RTXI_Block_Diagram.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/classNeuron.pdf, id=1130, 501.875pt x 184.50934pt>
+File: ./images/classNeuron.pdf Graphic file (type pdf)
+
+<use ./images/classNeuron.pdf> [116
+
+] [117 <./images/RTXI_Block_Diagram.png>]
+
+LaTeX Warning: Marginpar on page 118 moved.
+
+
+LaTeX Warning: Marginpar on page 118 moved.
+
+
+LaTeX Warning: Marginpar on page 118 moved.
+
+[118 <./images/classNeuron.pdf>]))
+No file user-guide.bbl.
+No file user-guide.ind.
+[119] (./user-guide.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5632 strings out of 493848
+ 82999 string characters out of 1152823
+ 149724 words of memory out of 3000000
+ 8375 multiletter control sequences out of 15000+50000
+ 11973 words of font info for 43 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,9n,36p,1793b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmitt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti7.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
+1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on user-guide.pdf (119 pages, 2027202 bytes).
+PDF statistics:
+ 1327 PDF objects out of 1440 (max. 8388607)
+ 366 named destinations out of 1000 (max. 500000)
+ 732 words of extra memory for PDF output out of 10000 (max. 10000000)
+

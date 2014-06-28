@@ -1,0 +1,65 @@
+\indexentry{MRCI}{5}
+\indexentry{RTLDC}{5}
+\indexentry{RTLab}{5}
+\indexentry{licensing}{5}
+\indexentry{dynamic clamp}{6}
+\indexentry{neuron model}{7}
+\indexentry{ion channel model}{7}
+\indexentry{sampling rate}{9}
+\indexentry{System Control Panel}{17}
+\indexentry{DAQ, configuration}{17}
+\indexentry{real-time period}{18}
+\indexentry{sampling rate}{18}
+\indexentry{Oscilloscope}{19}
+\indexentry{Oscilloscope, trigger}{21}
+\indexentry{Data Recorder}{22}
+\indexentry{rtxi\_hdf\_matlabize}{22}
+\indexentry{Connector}{23}
+\indexentry{modules, installation}{31}
+\indexentry{installation, modules}{31}
+\indexentry{DAQ, configuration}{32}
+\indexentry{sampling rate}{33}
+\indexentry{HDF5, file format}{37}
+\indexentry{HDF5, MATLAB}{40}
+\indexentry{rtxi\_hdf\_matlabize}{41}
+\indexentry{installation}{43}
+\indexentry{hardware requirements}{44}
+\indexentry{compatibility, hardware}{44}
+\indexentry{real-time performance}{44}
+\indexentry{COMEDI}{44}
+\indexentry{dynamic clamp}{45}
+\indexentry{hardware requirements}{45}
+\indexentry{DAQ, multiple cards}{47}
+\indexentry{RTXI, configuration}{47}
+\indexentry{DAQ, calibration}{47}
+\indexentry{calibration}{47}
+\indexentry{COMEDI, calibration}{47}
+\indexentry{RTXI, Live CD}{47}
+\indexentry{Live CD}{47}
+\indexentry{installation, Live CD}{47}
+\indexentry{installation, manual}{52}
+\indexentry{compatibility, software}{52}
+\indexentry{COMEDI}{55}
+\indexentry{kernel configuration}{56}
+\indexentry{RTAI, configuration}{58}
+\indexentry{RTAI, configuration}{60}
+\indexentry{RTXI, source code repository}{63}
+\indexentry{RTXI, configuration}{66}
+\indexentry{modules, custom}{69}
+\indexentry{DefaultGUIModel}{69}
+\indexentry{modules, DefaultGUIModel}{69}
+\indexentry{Makefile}{70}
+\indexentry{RT::System::getInstance()-$>$getPeriod()}{72}
+\indexentry{setState()}{73}
+\indexentry{setParameter()}{73}
+\indexentry{setParameter()}{73}
+\indexentry{DYNAMO}{76}
+\indexentry{modules, DYNAMO}{76}
+\indexentry{modules, custom GUI}{78}
+\indexentry{real-time performance}{79}
+\indexentry{latency}{79}
+\indexentry{licensing}{83}
+\indexentry{GNU GPL}{83}
+\indexentry{GNU LGPL}{94}
+\indexentry{DYNAMO, syntax}{99}
+\indexentry{dependencies, software}{112}
