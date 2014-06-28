@@ -1,0 +1,78 @@
+\subsection{The Hard Method}
+\label{manualinstall} \index{installation, manual, hardinstall}
+
+The following instructions are provided in the event that you can not use the Live USBs or prefer to customize your system yourself. The scripts we provide are designed for use in Ubuntu 12.04 and Scientific Linux 6.5. The specific configuration is displayed in Table \ref{configs}.
+
+\attention{All lines beginning with ``\texttt{\$}" are commands to execute in the terminal. Also, for convenience, use the TAB key to allow the shell to autocomplete directory and filenames for you.}
+
+\begin{enumerate}
+\item textbf{Do a clean install.} Install a clean version of Ubuntu or Scientific Linux using the official Live CD (links below). Be sure to choose the appropriate 32 or 64-bit version.
+
+Scientific Linux 6.5 (64-bit):\\
+\url{http://ftp1.scientificlinux.org/linux/scientific/livecd/65/x86\_64/SL-65-x86\_64-2014-02-06-LiveCD.iso}
+
+Scientific Linux 6.5 (32-bit):\\
+\url{http://ftp1.scientificlinux.org/linux/scientific/livecd/65/i386/SL-65-i386-2014-02-06-LiveCD.iso}
+
+Ubuntu 12.04 (64-bit):\\
+\url{http://releases.ubuntu.com/precise/ubuntu-12.04.4-desktop-amd64.iso}
+
+Ubuntu 12.04 (32-bit):\\
+\url{http://releases.ubuntu.com/precise/ubuntu-12.04.4-desktop-i386.iso}
+
+\item \textbf{Clone our GitHub repository.} Log into the freshly installed distribution and clone the RTXI repository. If git is not installed on your system by default, run \texttt{sudo apt-get install git} in Ubuntu or \texttt{sudo yum install git} in Scientific Linux.
+
+To download our source code and installation scripts from GitHub, where they are stored, run:
+
+\begin{verbatim}
+$ git clone https://github.com/RTXI/rtxi.git
+\end{verbatim}
+
+\item ] \textbf{Go to the scripts directory.} Change into the new directory and then into the scripts directory. Scripts are files ending with the extension ``.sh". Run:
+
+\begin{verbatim}
+$ cd rtxi
+$ cd scripts
+\end{verbatim}
+
+\item \textbf{Install dependencies for RTXI.}
+
+\begin{verbatim}
+$ bash ./install_dependencies.sh
+\end{verbatim}
+
+\item \textbf{Download, compile, and install the real-time Xenomai-enabled kernel.} This is done via one bash script. Be patient as it may take up to an hour to complete. By default, this script is setup to utilize the maximum number of cpus.
+
+\begin{verbatim}
+$ sudo bash ./install_rt_kernel.sh`
+\end{verbatim}
+
+\begin{comment}
+When the configuration options appear, specify your processor. If your processor is not listed, choose the 'generic' option.
+\end{comment}
+\textit{Note:} You need to reboot your system into the newly installed real-time kernel once the script has run. 
+
+\item \textbf{Compile and install RTXI.} The installation process will ask you to select your real-time kernel configuration and the drivers you wish to use. By default, you should select option 1 to install RTXI for Xenomai and Analogy, the respective kernel and drivers installed by the \texttt{install\_rt\_kernel.sh} script.
+
+\begin{verbatim}
+$ bash ./install_rtxi.sh
+\end{verbatim}
+
+\item (OPTIONAL) If you need DYNAMO, you will need to compile the DYNAMO translation utility.
+\label{install DYNAMO}
+\begin{verbatim}
+$ sudo apt-get install mlton
+$ cd /rtxi/dynamo
+$ mllex dl.lex
+$ mlyacc dl.grm
+$ mlton dynamo.mlb
+$ sudo cp dynamo /usr/bin
+\end{verbatim}
+
+\item \textbf{Run RTXI.} You may be asked for your password.
+
+\begin{verbatim}
+$ sudo rtxi
+\end{verbatim}
+
+\end{enumerate}

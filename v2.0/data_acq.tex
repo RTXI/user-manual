@@ -1,0 +1,145 @@
+
+\section{Data Acquisition Cards}
+\label{dataacquisition}
+\index{COMEDI}
+
+For closed loop experiments using RTXI, your computer must be equipped with an analog-to-digital converter (ADC) to acquire data and a digital-to-analog converter (DAC) to generate signals. Of course, external hardware such as an oscilloscope or function (waveform) generator can be used in conjunction with RTXI. A popular solution is to purchase a commercial multifunction data acquisition card that provides analog input and output, digital input and output, and counter/timer circuitry. DAQ cards using the USB interface are \attention \emph{not compatible} with RTXI since the USB drivers in Linux are not capable of hard real-time operation. Furthermore, the USB interface can only achieve a maximum sampling rate of approximately 1 kHz, which may be sufficient for some closed-loop real-time applications but not for \index{dynamic clamp}dynamic clamp. Many DAQ cards using the PCI, PCI express, or PXI interface are available from a variety of manufacturers. Your choice of DAQ card should depend on the number of analog and/or digital channels that you need, the amount of data resolution (eg. 12, 16-bit), the amount of sampling resolution (determined by the speed of the card), and whether you need simultaneous sampling (rather than sequential sampling) of multiple input channels. 
+
+Most RTXI users use products developed by National Instruments. \attention A complete list of COMEDI supported DAQ cards is available at http://www.comedi.org. COMEDI also provides low-level drivers for cards using a 8255 chip, which provides three channels of 8 bit digital input or output, and for standard PC parallel ports. A list of currently supported NI cards and the corresponding COMEDI driver name is given in Table \ref{COMEDI NI}. A list of other COMEDI supported DAQ manufacturers is given in Table \ref{DAQs}.\index{hardware requirements}
+
+\vspace{1cm}
+\begin{table}[htdp]
+\caption{DAQ Manufacturers with COMEDI supported Hardware}
+\label{DAQs}
+\begin{center}
+\vspace{.5cm}
+\begin{tabular}{ll}
+ADLINK & http://www. adlinktech.com\\
+Advantech & http://www.advantech.com\\
+Amplicon & http://www.amplicon.com\\
+Data Translation & http://www.datatranslation.com\\
+Fastwel & http://www.fastwel.com\\
+General Standards Corporation & http://www.generalstandards.com\\
+ICP & http://www.icpdas-usa.com\\
+Intelligent Instrumentation & http://www.instrument.com\\
+Keithley Instruments & http://www.keithley.com\\
+Measurement Computing & http://www.mccdaq.com\\
+National Instruments & http://www.ni.com/dataacquisition\\
+\end{tabular}
+\end{center}
+\end{table}
+\vspace{1cm}
+
+\begin{fullpage}
+\begin{table}
+\caption{COMEDI supported National Instruments DAQ cards}
+\label{COMEDI NI}
+\begin{center}
+\vspace{.5cm}
+\begin{tabular}{lcclc}
+ \textbf{Device} & \textbf{Driver} & & \textbf{Device} & \textbf{Driver}\\
+AT-MIO-16E-1 & ni\_atmio & & PCI-MIO-16XE-50 & ni\_pcimio\\ 
+AT-MIO-16E-2 & ni\_atmio & & PCI-MIO-16XE-10 & ni\_pcimio\\ 
+AT-MIO-16E-10 & ni\_atmio & & PCI-MIO-16E-1 & ni\_pcimio\\ 
+AT-MIO-16DE-10 & ni\_atmio & & PCI-MIO-16E-4 & ni\_pcimio\\ 
+AT-MIO-64E-3 & ni\_atmio & & PCI-6014 & ni\_pcimio\\ 
+AT-MIO-16XE-50 & ni\_atmio & & PCI-6030E & ni\_pcimio\\ 
+AT-MIO-16XE-10 & ni\_atmio & & PCI-6040E & ni\_pcimio\\ 
+AT-AI-16XE-10 & ni\_atmio &  & PCI-6031E & ni\_pcimio\\ 
+
+& & & PCI-6033E & ni\_pcimio\\ 
+PCIe-6251 & ni\_pcimio &  & PCI-6071E & ni\_pcimio\\ 
+PCIe-6259 & ni\_pcimio &  & PCI-6023E & ni\_pcimio\\ 
+
+& & & PCI-6024E & ni\_pcimio\\ 
+PXI-6030E & ni\_pcimio &  & PCI-6025E & ni\_pcimio\\ 
+PXI-6040E & ni\_pcimio &  & PCI-6034E & ni\_pcimio\\ 
+PXI-6025E & ni\_pcimio &  & PCI-6035E & ni\_pcimio\\ 
+PXI-6281 & ni\_pcimio &  & PCI-6036E & ni\_pcimio\\ 
+PXI-6711 & ni\_pcimio &  & PCI-6052E & ni\_pcimio\\ 
+PXI-6713 & ni\_pcimio &  & PCI-6070E & ni\_pcimio\\ 
+PXI-6071E & ni\_pcimio &  & PCI-6110 & ni\_pcimio\\ 
+PXI-6070E & ni\_pcimio &  & PCI-6111 & ni\_pcimio\\ 
+PXI-6052E & ni\_pcimio &  & PCI-6143 & ni\_pcimio\\ 
+PXI-6733 & ni\_pcimio &  & PCI-6220 & ni\_pcimio\\ 
+PXI-6143 & ni\_pcimio &  & PCI-6221 & ni\_pcimio\\ 
+& & & PCI-6224 & ni\_pcimio\\ 
+& & & PCI-6225 & ni\_pcimio\\ 
+& & & PCI-6229 & ni\_pcimio\\ 
+& & & PCI-6250 & ni\_pcimio\\ 
+& & & PCI-6251 & ni\_pcimio\\ 
+& & & PCI-6254 & ni\_pcimio\\ 
+& & & PCI-6259 & ni\_pcimio\\ 
+& & & PCI-6280 & ni\_pcimio\\ 
+& & & PCI-6281 & ni\_pcimio\\ 
+& & & PCI-6284 & ni\_pcimio\\ 
+& & & PCI-6289 & ni\_pcimio\\ 
+& & & PCI-6711 & ni\_pcimio\\ 
+& & & PCI-6713 & ni\_pcimio\\ 
+& & & PCI-6731 & ni\_pcimio\\ 
+& & & PCI-6733 & ni\_pcimio\\ 
+\end{tabular}
+\end{center}
+\end{table}
+\end{fullpage}
+
+\begin{fullpage}
+\begin{table}
+\caption{Analogy supported National Instruments DAQ cards}
+\label{ANALOGY NI}
+\begin{center}
+\vspace{.5cm}
+\begin{tabular}{lcclc}
+\textbf{Device} & \textbf{Driver} & & \textbf{Device} & \textbf{Driver}\\
+& & & PCI-6224 & ni\_pcimio\\ 
+& & & PCI-6225 & ni\_pcimio\\ 
+& & & PCI-6229 & ni\_pcimio\\ 
+& & & PCI-6250 & ni\_pcimio\\ 
+& & & PCI-6251 & ni\_pcimio\\ 
+& & & PCI-6254 & ni\_pcimio\\ 
+& & & PCI-6259 & ni\_pcimio\\ 
+& & & PCI-6280 & ni\_pcimio\\ 
+& & & PCI-6281 & ni\_pcimio\\ 
+& & & PCI-6284 & ni\_pcimio\\ 
+& & & PCI-6289 & ni\_pcimio\\ 
+& & & PCI-6711 & ni\_pcimio\\ 
+& & & PCI-6713 & ni\_pcimio\\ 
+& & & PCI-6731 & ni\_pcimio\\ 
+& & & PCI-6733 & ni\_pcimio\\ 
+\end{tabular}
+\end{center}
+\end{table}
+\end{fullpage}
+
+\label{more DAQ cards}\attention RTXI has no built-in software limitations on the number of DAQ cards but is configured for only one card by default. If you want to use additional cards, you will need to edit the configuration file. Here is the relevant excerpt of \texttt{/etc/rtxi.conf}:\index{DAQ, multiple cards}\index{RTXI, configuration}
+\begin{example}
+\bigskip\hrule\smallskip
+<OBJECT component="plugin" library="comedi\_driver.so" id="2">\\
+<PARAM name="0">/dev/comedi0</PARAM>\\
+<PARAM name="Num Devices">1</PARAM>\\
+<OBJECT id="13" name="0" />\\
+</OBJECT>
+\bigskip\hrule\bigskip
+\end{example}
+
+Edit the lines to add another COMEDI device and change the number of devices:
+\begin{example}
+\bigskip\hrule\smallskip
+<PARAM name="0">/dev/comedi0</PARAM>\\
+<PARAM name="1">/dev/comedi1</PARAM>\\
+<PARAM name="Num Devices">2</PARAM>
+\bigskip\hrule\bigskip
+\end{example}
+
+You will need to exit and restart RTXI for the new configuration to take effect. Settings files that you have already created should still work when you change \texttt{rtxi.conf} but you may not have access to both DAQ cards in the System Control Panel, the Oscilloscope, and the Connector. You will have to rebuild those settings files or edit them as above using your choice of text editor.
+
+RTXI automatically detects the manufacturer and board names of available DAQ cards and the number and type of input and output channels. The first DAQ card installed in your system is assigned the Linux device name: \texttt{/dev/comedi0}. Additional DAQ cards are assigned device names \texttt{/dev/comedi1} and so on. You can check that your DAQ card has been correctly detected and see the corresponding device name by clicking \textbf{Help}$\rightarrow$\textbf{About COMEDI} from the RTXI menu bar.
+
+\index{DAQ, calibration} \index{calibration}
+\index{COMEDI, calibration}\label{comedi calibration}
+To calibrate your DAQ card, use the comedi\_calibrate utility as follows for each COMEDI device:
+\begin{example}
+\$ sudo comedi\_calibrate --reset --dump --calibrate --results --verbose /dev/comedi0
+\end{example}
+
+If you are using a National Instruments M-Series card, you will need to use the \texttt{comedi\_soft\_calibrate} utility instead.

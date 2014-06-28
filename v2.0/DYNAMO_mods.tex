@@ -1,0 +1,96 @@
+\section{DYNAMO Modules}
+\label{dynamomodules}
+\index{DYNAMO}
+\index{modules, DYNAMO}
+A complete manual for the DYNAMO class is given in Appendix \ref{dynamo appendix}.
+\attention In order to compile DYNAMO models from within RTXI, you will need to start RTXI with \texttt{sudo} privileges. \seealso{Chapter \ref{install DYNAMO}\\Installing DYNAMO} DYNAMO is already installed on the Live CD but users installing RTXI manually should follow the instructions for enabling DYNAMO on their system. \vspace{.5cm}
+\hrule
+\vspace{.5cm}
+DYNAMO is a scripting language that allows you to create a RTXI module based on a dynamical system model described by ordinary differential equations. It uses a simple syntax for declaring the system states, parameters, state functions, and differential equations. DYNAMO models can be written using any plain text editor and are loaded into RTXI using the menu item \textbf{Modules}$\rightarrow$\textbf{Load DYNAMO Module}. This calls the DYNAMO translator, which generates a \cpp  header and implementation file and compiles an RTXI module based on the \texttt{DefaultGUIModel} class. The generated header and implementation file are not readable since the computations are parsed into single multiply and add arithmetic operations such that intermediate values are given arbitrary variable names. After the translation step, the module is accessible through the regular \textbf{Load User Module} menu item. Unless the DYNAMO model file has been edited, it will not be re-translated and re-compiled.
+
+A DYNAMO model file consists of a declaration section followed by a time block. The declaration section specifies the names and initial values of all quantities in the dynamical system. Every declaration is ended by a semicolon. The first declaration has to be a declaration of the system, which simply states the name of the model for informative purposes:
+
+\begin{example}
+  MODEL \emph{system\_name}
+\end{example}
+
+where \emph{system\_name} follows the rules for an identifier name.
+
+After the system declaration, there follow a number of declarations of states, parameters, and functions. \emph{Parameters} are constants during integration. The syntax for declaring a parameter is
+\begin{example}
+        PARAMETER \emph{name} = \emph{default\_value} ``\emph{description}''
+\end{example}
+
+where \emph{description} is optional. The description string is there for convenience and is not read by any program. It is always optional, so it can be omitted. \emph{States} are the components of the dynamical system whose values change over time and are computed by a difference or differential equation.  There are several different kinds of states. \emph{Scalar states} can only contain a scalar value and are declared with the keyword \texttt{STATE}:
+
+\begin{example}
+        STATE \emph{name} = \emph{initial condition} ``\emph{description}'';
+\end{example}
+
+where \emph{name} is the name of the state as the user sees it and \emph{initial condition} is the default initial condition, a real constant. For example, in the following declaration,
+
+\begin{example}
+        STATE x = 0.1 "gating variable for inward conductance";
+\end{example}
+
+\texttt{x} is the name of the state, and 0.1 is the default initial condition. The above declaration will create a state variable which is integrated using an equation in the time block, described later in this section. The default method for integration is Euler's method. DYNAMO also supports a method we call \emph{multiply-add-update}, in which the state variable being integrated is multiplied and added with the values returned by two functions dependent on \texttt{dt}.  The method of integration can be specified with the \texttt{METHOD} attribute of the state definition, as follows:
+
+\begin{example}
+        STATE \emph{name} = \emph{initial condition} METHOD \emph{method\_name};
+\end{example}
+
+where \texttt{method\_name} can be either \texttt{euler} or \texttt{mau}, indicating Euler or multiply-add-update, respectively. Thus, our example can be changed to:
+
+\begin{example}
+        STATE x = 0.1 METHOD "mau"  "gating variable for inward conductance";
+\end{example}
+
+\emph{External states} are states whose value is either obtained through the data acquisition board (\emph{external input}), or whose value is being output to the data acquisition board (\emph{external output}). They are declared as: 
+
+\begin{example}
+        EXTERNAL INPUT Vin1, Vin2;
+        EXTERNAL OUTPUT Vout;
+\end{example}
+
+The input state can then be used in equations and expressions; the output state may not be used in expressions, and it must be assigned a value.  The values of these external state variables are in terms of
+the units provided by the data acquisition board, usually volts. The order in which external input and output states are declared determines their assignment to physical channels of the data acquisition board.  For example, in the above declaration, state \emph{Vin1} will be assigned to input channel 0, and state \emph{Vin2} will be assigned to input channel 1. Had they been declared in reverse order, then state \emph{Vin1} would have been assigned to input channel 1, and state \emph{Vin2} would have been assigned to input channel 0.
+
+\emph{Functions} are quantities that are statically dependent on other quantities in the system---unlike state equations, their equations are not permitted to use the previously computed value of the quantity. There are \emph{scalar functions} which return a scalar value:
+\begin{example}
+        STATE FUNCTION \emph{name} "\emph{description}";
+\end{example}
+
+For all systems, there is only one ``time'', to be declared with the declaration \texttt{TIME}. The syntax is
+
+\begin{example}
+        TIME \emph{name};
+\end{example}
+
+The time variable that was declared with the above statement can be used anywhere in the model equations. Its value is a real number that represents the number of milliseconds elapsed since the beginning of the simulation. At each computational step it is incremented by \texttt{dt}.
+
+A time block describes the equations which are in effect during the named time. Dynamic equations are all in the \texttt{AT TIME t}-block (assuming that the system time is called \texttt{t}).  The equations in a time block are, if possible, sorted in order so they can be sequentially executed. If the equations contain a circular dependence, the sorting will fail. The DYNAMO translator can not solve algebraic loops (It can be claimed that in this case, the user has not written complete and consistent equations for the system). Other sanity tests (like that every derivative is assigned exactly once) are also performed.
+
+Function expressions are specified in the following manner:
+
+\begin{example}
+        f1 = sin((1 + a) / 5)
+\end{example}
+
+The above statement will specify that at each iteration, the quantity \emph{f1} will have the value computed with the given expression. \emph{f1} then can be used in the expressions of other functions, differential equations, etc:
+
+\begin{example}
+        f2 = sin(f1 * 12)
+\end{example}
+
+On the right hand side, almost any scalar C expression is allowed: The exponential operator, denoted either \emph{$\ast\ast$} or \emph{$^{\wedge}$}, has been added to the C syntax.  The equation, which may run over several lines, is terminated with a semicolon. Further, the sequencing operator (the comma) is not allowed, since an expression sequence can hardly be an ``equation''. See Appendix \ref{Expressions and Operators in the System Description Language}, for a complete description of the possible arithmetic expressions. Standard mathematical functions are available with their usual names (log, cos, atan, etc@dots{}). See Appendix \ref{Mathematical Functions in the System Description Language}, for a list of all DYNAMO-supported mathematical functions. 
+
+Differential equations are specified in the following form:
+\begin{example}
+        d(\emph{state}) = \emph{right-hand side};
+\end{example}
+Here \texttt{d( )} denotes the differential operator, and \texttt{d(x)} should here be interpreted as ${dx/dt}$.  On the right-hand side, the same rules apply as for function expressions. In cases where the desired method of integration requires more than one equation (such as the multiply-add-update method), the equations are written as a comma-separated list enclosed in brackets. Thus:
+\begin{example}
+        d(\emph{state}) = [ \emph{exp1}, \emph{exp2} ];
+\end{example}
+
+A complete sample DYNAMO script is available in Appendix \ref{DYNAMO Example}.

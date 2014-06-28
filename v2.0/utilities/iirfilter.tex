@@ -1,0 +1,52 @@
+% IIR Filter Module
+
+\subsubsection{Overview}
+\label{IIR Filter}
+\index{IIR Filter}\index{utilities, IIR Filter}\index{filter, IIR Filter}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3in]{IIRfilter.png}
+\caption[iirfilter]{The infinite impulse response filter module can be used to filter  any signal in RTXI.}
+\end{center}
+\label{firfilter}
+\end{figure}
+
+This module computes coefficients for three types of filters. They require the following parameters:
+
+Butterworth: passband edge
+The Butterworth filter is the best compromise between attenuation and phase response. It has no ripple in the pass band or the stop band, and because of this is sometimes called a maximally flat filter. The Butterworth filter achieves its flatness at the expense of a relatively wide transition region from pass band to stop band, with average transient characteristics.
+
+Chebyshev: passband ripple, passband edge
+The Chebyshev filter has a smaller transition region than the same-order Butterworth filter, at the expense of ripples in its pass band. The filter minimizes the height of the maximum ripple. If you use a Chebyshev filter, you should also choose the type of normalization to apply.
+
+Elliptical: passband ripple, stopband ripple, passband edge, stopband edge
+An Elliptical (Cauer) filter has a shorter transition region than the Chebyshev filter because it allows ripples in both the stop and pass bands, giving a much higher rate of attenuation in the stop band. Elliptical filters give better frequency discrimination, but have a degraded transient response.
+
+You may save the computed coefficients and the filter’s parameters to a file.
+
+\subsubsection{Input Channels}
+\begin{description}
+\item [Input]Signal to be filtered
+\end{description}
+
+\subsubsection{Output Channels}
+\begin{description}
+\item [Output]Filtered input signal
+\end{description}
+
+\subsubsection{Parameters}
+\begin{description}
+\item [Filter order]An integer for the desired order for the filter
+\item [Passband Ripple (dB)]
+\item [Passband Edge (Hz)]
+\item [Stopband Ripple (dB)]
+\item [Stopband Edge (Hz)]
+\item [Input quantizing factor]The number of bits to quantize the input signal to
+\item [Coefficients quantizing factor]The number of bits to quantize the filter coefficients to
+\end{description}
+
+\subsubsection{States}
+\begin{description}
+\item [Time (s)] Time elapsed, in seconds, since filter was started
+\end{description}

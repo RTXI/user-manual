@@ -1,0 +1,23 @@
+Manual_Kernel_Patch_Instructions* suggestions
+
+1. For the commands, add "$ " before the start of each individual command. Write it in such a way that people won't think to type "$ " in front of every line. (This method may be annoying if people want to copy and paste blocks of code. Each line will get an extraneous "$ " in it.)
+
+Starting lines with "$ " may also create confusion if people do not know the syntax for variables. An alternate solution would be to use "\". The real point is to format the code in such a way that people will enter valid commands into the terminal and not leave bits out. 
+
+
+2. For step 2, specify the empty directory for the workspace and have the user create it. 
+
+
+3. Encourage people to copy and paste the code and avoid mistyping things. 
+
+
+4. Do people need to be told how to open the terminal and enter information? The code here assumes that people know how to use "sudo", so maybe not. 
+
+
+5. Under step 7, for the bit under "processor type and features", a generic processor may have to be specified if nothing matches. Also, a mention of "$ cat /proc/cpuinfo" could be helpful. 
+
+
+6. Mention which error messages need not cause concern. The dpkg commands in step 8 are the only examples I have. 
+
+
+7. Mention which lines will take a long time to run. That may help in case people start getting concerned or frustrated. 

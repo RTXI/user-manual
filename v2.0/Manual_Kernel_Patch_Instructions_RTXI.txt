@@ -1,0 +1,120 @@
+1. After clean install of Ubuntu (32 or 64 bit)
+
+sudo apt-get install kernel-package
+sudo apt-get install fakeroot build-essential crash kexec-tools makedumpfile kernel-wedge
+sudo apt-get build-dep linux
+sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev
+sudo apt-get install qt3-dev-tools libqt3-mt-dev 
+
+2. Set up convenience variables
+
+Navigate to an empty directory to act as the workspace and set up these environment variables and directories:
+
+export linux_version=2.6.32.20
+export linux_tree=`pwd`/linux-$linux_version
+
+export xenomai_version=2.5.5.2
+export xenomai_root=`pwd`/xenomai-$xenomai_version
+
+export build_root=`pwd`/build
+mkdir $build_root
+
+3. Download and unpack Xenomai
+
+wget http://download.gna.org/xenomai/stable/xenomai-$xenomai_version.tar.bz2
+tar xf xenomai-$xenomai_version.tar.bz2
+
+4. Download and unpack Linux Kernel Source
+
+wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-$linux_version.tar.bz2
+tar xf linux-$linux_version.tar.bz2
+
+5. Copy the kernel config that your machine is already using as the basis for the real-time kernel:
+
+cp -vi /boot/config-`uname -r` $linux_tree/.config
+
+6. Patch the Kernel
+
+$xenomai_root/scripts/prepare-kernel.sh --arch=x86\
+  --adeos=$xenomai_root/ksrc/arch/x86/patches/adeos-ipipe-2.6.32.20-x86-2.7-03.patch\
+  --linux=$linux_tree
+
+7. Configure the Kernel
+
+cd $linux_tree
+make menuconfig
+
+The following are a few options to check:
+
+    Real-time sub-system
+        ENABLE Xenomai
+	Drivers
+	    ANALOGY Drivers
+		ENABLE ANALOGY interface and NI PCIMIO 
+    Power management and ACPI options
+        ACPI (Advanced Configuration and Power Interface) Support
+            DISABLE Processor 
+        CPU Frequency scaling
+            DISABLE CPU Frequency scaling 
+    Processor Type and Features
+        SET Processor family 
+	DISABLE -fstack-protector buffer overflow detection
+    Device Drivers
+	Staging Drivers
+	    DISABLE Data Acquisition Support (COMEDI)
+    
+8. Build the kernel
+
+export CONCURRENCY_LEVEL=7
+fakeroot make-kpkg --bzimage --initrd --append-to-version=-xenomai-$xenomai_version kernel-image kernel-headers modules
+cd ..
+sudo dpkg -i linux-image-*.deb
+sudo dpkg -i linux-headers-*.deb
+
+9. After compilation completes, run:
+
+sudo update-initramfs -c -k "$linux_version-xenomai-$xenomai_version"
+sudo update-grub
+
+10. Configure Xenomai User Libraries
+
+cd $build_root
+$xenomai_root/configure\
+  --enable-shared\
+  --enable-smp\
+  --enable-posix-auto-mlockall\
+  --enable-dlopen-skins\
+  --enable-x86-sep
+make
+sudo make install
+
+11. Add xenomai Group For Non-root RT
+
+sudo addgroup xenomai
+sudo adduser `whoami` xenomai
+
+13. Then update grub:
+
+sudo update-grub
+
+###stopped here!
+
+14. Restart computer and boot into xenomai kernel
+
+15. Install RTXI
+
+open a new terminal and clone the RTXI repository
+
+git clone https://github.com/RTXI/rtxi.git
+
+cd rtxi
+
+./setup
+
+16. You will be asked to choose an installation setting
+
+type 3
+
+17. After completion, type the following in the terminal window to start rtxi
+
+sudo rtxi

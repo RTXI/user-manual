@@ -1,0 +1,30 @@
+\chapter{Getting Started}
+
+\section{RTXI Software Installation}
+\index{installation}
+There are two methods for installing RTXI on your computer:
+\begin{enumerate}
+\item \textbf{Easy:} Booting off an RTXI Live USB.
+\item \textbf{Hard:} Compiling a real-time Linux operating system and then installing RTXI.
+\end{enumerate}
+
+% As of v2.0, we have transitioned our base Linux distribution of choice to Scientific Linux. In addition to having a stable and long-term support life cycle, it's development roadmap is inline with the RTXI development roadmap (Appendix \ref{roadmap}). Scientific Linux 
+
+We suggest that users new to Linux use the Live USB. As of v2.0, we support installations built on Ubuntu 12.04. Ubuntu is the most popular desktop-oriented Linux distribution and has an extensive online support community. If you choose to compile the operating system yourself, you can choose any Linux distribution, but your should be prepared to address issues during installation. All Linux distributions are based on the same Linux ``kernel," but they differ in their default utilities, filesystem hierarchies, and libraries. In general, these issues can be address across distributions. 
+
+Note that manual compilation can result in better real-time performance, particularly when compiling for a specific processor family rather than a generic type. 
+
+\attention
+The current Live USBs available on the RTXI website (http://www.rtxi.org) are configured to handle processors with either one or two cores. You may experience issues if your system has more cores. If this causes RTXI to not start off the Live USB, check your kernel log by by running:
+\bigskip
+\begin{example}
+\hrule\bigskip
+\$ dmesg\\
+.\\
+.\\
+$\left[\textrm{ 390.069252}\right] \textrm{RTAI}\left[\textrm{hal}\right]$: RTAI CONFIGURED WITH LESS THAN NUM ONLINE CPUS
+\bigskip
+\hrule\bigskip
+\end{example}
+
+If the error matches the one here, you will need to start Ubuntu with fewer cores enabled. Press ``E" when you see the GRUB bootloader menu to edit the boot command, ant at the end of the line beginning with ``\texttt{boot}", add the flag \texttt{maxcpus="X"} where X is the number cores you want to use. The, to boot, use the keyboard shortcut CTRL-X. Note that this modification is not permanent and you will need to do this step every time you restart the computer. It is possible, though, to permanently edit your GRUB menu with this flag when you are booted into your system.
