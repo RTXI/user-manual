@@ -80,21 +80,21 @@
 \contentsline {subsection}{\numberline {6.3.2}Membrane Test}{80}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Clamp Protocol}{80}{subsection.6.3.3}
 \contentsline {chapter}{Appendix}{81}{chapter*.31}
-\contentsline {section}{\numberline {.1}Licensing Information}{81}{section.Alph0.1}
-\contentsline {subsection}{\numberline {.1.1}GNU General Public License}{81}{subsection.Alph0.1.1}
-\contentsline {subsection}{\numberline {.1.2}GNU Lesser General Public License}{93}{subsection.Alph0.1.2}
-\contentsline {section}{\numberline {.2}DYNAMO Scripting Language}{95}{section.Alph0.2}
-\contentsline {subsection}{\numberline {.2.1}Using DYNAMO with RTXI}{95}{subsection.Alph0.2.1}
-\contentsline {subsection}{\numberline {.2.2}Running DYNAMO from the terminal}{96}{subsection.Alph0.2.2}
-\contentsline {subsection}{\numberline {.2.3}DYNAMO Syntax}{96}{subsection.Alph0.2.3}
+\contentsline {section}{\numberline {.1}Licensing Information}{81}{section..1}
+\contentsline {subsection}{\numberline {.1.1}GNU General Public License}{81}{subsection..1.1}
+\contentsline {subsection}{\numberline {.1.2}GNU Lesser General Public License}{93}{subsection..1.2}
+\contentsline {section}{\numberline {.2}DYNAMO Scripting Language}{95}{section..2}
+\contentsline {subsection}{\numberline {.2.1}Using DYNAMO with RTXI}{95}{subsection..2.1}
+\contentsline {subsection}{\numberline {.2.2}Running DYNAMO from the terminal}{96}{subsection..2.2}
+\contentsline {subsection}{\numberline {.2.3}DYNAMO Syntax}{96}{subsection..2.3}
 \contentsline {subsubsection}{Concepts}{97}{section*.32}
 \contentsline {subsubsection}{Structure of a DYNAMO Model}{97}{section*.33}
 \contentsline {subsubsection}{Declarations}{97}{section*.34}
 \contentsline {subsubsection}{Time Blocks}{100}{section*.35}
 \contentsline {subsubsection}{Expressions and Operators in the Modeling Language}{101}{section*.36}
 \contentsline {subsubsection}{Mathematical Functions in the Modeling Language}{105}{section*.37}
-\contentsline {section}{\numberline {.3}DYNAMO Example}{106}{section.Alph0.3}
-\contentsline {section}{\numberline {.4}Information for Developers}{107}{section.Alph0.4}
-\contentsline {subsection}{\numberline {.4.1}RTXI Architecture}{107}{subsection.Alph0.4.1}
-\contentsline {subsection}{\numberline {.4.2}Software Requirements}{108}{subsection.Alph0.4.2}
-\contentsline {subsection}{\numberline {.4.3}Development Roadmap}{110}{subsection.Alph0.4.3}
+\contentsline {section}{\numberline {.3}DYNAMO Example}{106}{section..3}
+\contentsline {section}{\numberline {.4}Information for Developers}{107}{section..4}
+\contentsline {subsection}{\numberline {.4.1}RTXI Architecture}{107}{subsection..4.1}
+\contentsline {subsection}{\numberline {.4.2}Software Requirements}{108}{subsection..4.2}
+\contentsline {subsection}{\numberline {.4.3}Development Roadmap}{110}{subsection..4.3}
