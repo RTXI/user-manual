@@ -8,14 +8,12 @@ There are two methods for installing RTXI on your computer:
 \item \textbf{Hard:} Compiling a real-time Linux operating system and then installing RTXI.
 \end{enumerate}
 
-% As of v2.0, we have transitioned our base Linux distribution of choice to Scientific Linux. In addition to having a stable and long-term support life cycle, it's development roadmap is inline with the RTXI development roadmap (Appendix \ref{roadmap}). Scientific Linux 
-
 We suggest that users new to Linux use the Live USB. As of v2.0, we support installations built on Ubuntu 12.04. Ubuntu is the most popular desktop-oriented Linux distribution and has an extensive online support community. If you choose to compile the operating system yourself, you can choose any Linux distribution, but your should be prepared to address compatibility issues that may arise. All Linux distributions are based on the same Linux kernel, but they differ in their default utilities, filesystem hierarchies, and libraries. 
 
 Note that manual compilation can provide better real-time performance, particularly when compiling for a specific processor family rather than a generic type. 
 
 \attention
-The current Live USBs available on the RTXI website (http://www.rtxi.org) are configured to handle processors with either one or two cores. You may experience issues if your system has more. If this causes RTXI to not start off the Live USB, check your kernel log by by running:
+The current Live USBs are available as bootable ISO images on the RTXI website (http://www.rtxi.org). They are configured to handle processors with either one or two cores. You may experience issues if your system has more. If this causes RTXI to not start off the Live USB, check your kernel log by by running:
 \bigskip
 \begin{example}
 \hrule\bigskip

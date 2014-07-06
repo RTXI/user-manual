@@ -6,7 +6,7 @@ The Live USB provides a complete real-time Linux operating system with RTXI with
 
 \textit{Note:} You do not need a DAQ card installed to test the Live CD or for RTXI to run.
 
-The Live USB is distributed as an ISO image on our website (www.rtxi.org) for both 32 and 64-bit systems. To decrease the size of the Live USB, we removed many  common desktop applications, such as LibreOffice, that can easily be reinstalled later. Note that while the image can be burned to a DVD and then run, there will be significant speed limitations. 
+The Live USB is distributed as a bootable ISO image on our website (www.rtxi.org) for both 32 and 64-bit systems. To decrease the size of the Live USB, we removed many  common desktop applications, such as LibreOffice, that can easily be reinstalled later. Note that while the image can be burned to a DVD and then run, there will be significant speed limitations. 
 
 To install the live image to a USB, follow these steps:
 
@@ -29,6 +29,13 @@ To install the live image to a USB, follow these steps:
 \textit{Note of caution:} Be sure you know which drive is which. If you accidentally write to the wrong drive, you will lose any data already stored on it. 
 
 Once everything is set, click ``OK" to start the installation process. 
+
+\item \textbf{Check the config file.} Open the USB. You will see several files that correspond to different parts of the live system. 
+
+Open the file in your favorite text editor and check the boot line. Make sure the image being booted reads: 
+\begin{example}
+BOOT=/vmlinuz
+\end{example}
 
 \item \textbf{Boot using the Live USB.} Once the Unetbootin is finished, shut off your system. By default, your computer may not be configured to boot off a USB drive. When you turn on your computer, you will have to press ``F2", ``F4", or another F key depending on your computer to access your BIOS menu. The following instructions use the BIOS of our system, but your will likely be similar. 
 

@@ -1,0 +1,42 @@
+Sections of user guide to do:
+
+3.4 installation.tex
+	easy method y hard method
+	easy - livecd
+		bios/uefi boot mode
+		unetbootin
+		make sure livecd page on rtxi.org matches user guide
+		walk-through livecd process
+	hard - scripts
+		patching kernel
+		installing rtxi
+			list options
+		also the dependencies script
+		Tell users to run: `sudo bash ./script_name`
+
+	mention Qt4 and Qwt versions
+
+4 Writing custom modules
+	Go over entire process
+	Document how creating GUI's works
+	go over Qt's gridlayout
+4.4 Point them to moduels that have already implemented features. 
+	Tell them to fork modules that perform similar functions
+	Edit of utilities chapter
+	Talk about current and future toolboxes to utilities
+		lump plugins based on function and call lumps toolboxes
+		replace with chart of available modules
+		move utility info to github repo README.md files
+		categories:
+			dynclamp
+			eeg
+			filters
+			optogenetics
+			patch clamp
+
+?Mention things about RTAI? 
+
+Revamp manual so that it doesn't spam 'dunamiic clamp' 
+
+
+Reorder the sections

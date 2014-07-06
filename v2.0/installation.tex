@@ -1,9 +1,9 @@
 
 \section{Installation}
 
-The following sets of instructions are provided for installation of RTXI on  Ubuntu 12.04 and Scientific Linux 6.5. Other Linux distributions are compatible with RTXI and require similar steps for compiling a real-time kernel, installing Xenomai, and installing RTXI and its dependencies. Differences include the commands for compiling a new kernel, filesystem hierarchies, and package names within each distribution's repository. To date, RTXI has been successfully installed on Ubuntu, Scientific Linux, SUSE, and Fedora. 
+The following sets of instructions are provided for installation of RTXI on  Ubuntu 12.04. Other Linux distributions are compatible with RTXI and require similar steps for compiling a real-time kernel, installing Xenomai, and installing RTXI and its dependencies. To date, RTXI has been successfully installed on Ubuntu, Scientific Linux, SUSE, and Fedora. 
 
-RTXI requires a real-time kernel, which is created by patching Xenomai on to an existing mainline kernel. Xenomai versions are compatible with specific kernel versions. Users can choose any supported combination of Linux and Xenomai, but our installation scripts and media push:
+RTXI requires a real-time kernel, which is created by patching Xenomai on to an existing mainline kernel. Xenomai versions are compatible with specific Linux kernels. Users can choose any supported combination of Linux and Xenomai, but note that our installation media and scripts push Ubuntu 12.04 with the 3.8.13 kernel and 2.6.3 Xenomai patch.
 
 \index{compatibility, software}
 \begin{table}[htdp]
@@ -16,5 +16,5 @@ Ubuntu 12.04 & 3.8.13 & 2.6.3 & Yes \\
 Scientific Linux 6.5 & 3.8.13 & 2.6.3 & No\\
 \end{tabular}
 \end{center}
-\caption{Recommended platforms for RTXI installation. The first column gives the distribution version installed via an official Live CD. The second and third respectively specify the vanilla Linux kernel and Xenomai version used to build a real-time kernel.}
+\caption{}
 \end{table}%
