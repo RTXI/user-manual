@@ -15,8 +15,9 @@
 \BOOKMARK [1][-]{section.3.2}{Hardware Requirements}{chapter.3}
 \BOOKMARK [1][-]{section.3.3}{Data Acquisition Cards}{chapter.3}
 \BOOKMARK [1][-]{section.3.4}{Installation}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.4.1}{The Easy Method}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.2}{The Hard Method}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.1}{The Live USB}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.2}{The Easy Method}{section.3.4}
+\BOOKMARK [2][-]{subsection.3.4.3}{The Hard Method}{section.3.4}
 \BOOKMARK [1][-]{section.3.5}{RTXI Configuration Options}{chapter.3}
 \BOOKMARK [1][-]{section.3.6}{Installing User Modules}{chapter.3}
 \BOOKMARK [1][-]{section.3.7}{Acquiring Data \(Model Cell Tutorial\)}{chapter.3}

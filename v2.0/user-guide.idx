@@ -20,57 +20,56 @@
 \indexentry{compatibility, hardware|hyperpage}{27}
 \indexentry{real-time performance|hyperpage}{27}
 \indexentry{COMEDI|hyperpage}{27}
-\indexentry{dynamic clamp|hyperpage}{27}
 \indexentry{hardware requirements|hyperpage}{28}
-\indexentry{DAQ, multiple cards|hyperpage}{31}
-\indexentry{RTXI, configuration|hyperpage}{31}
-\indexentry{DAQ, calibration|hyperpage}{31}
-\indexentry{calibration|hyperpage}{31}
-\indexentry{COMEDI, calibration|hyperpage}{31}
-\indexentry{compatibility, software|hyperpage}{32}
-\indexentry{RTXI, Live CD, Live USB, installation, easy install|hyperpage}{32}
+\indexentry{DAQ, multiple cards|hyperpage}{30}
+\indexentry{RTXI, configuration|hyperpage}{30}
+\indexentry{DAQ, calibration|hyperpage}{30}
+\indexentry{calibration|hyperpage}{30}
+\indexentry{COMEDI, calibration|hyperpage}{30}
+\indexentry{compatibility, software|hyperpage}{31}
+\indexentry{RTXI, Live CD, Live USB, installation, easy install|hyperpage}{31}
 \indexentry{installation, manual, hardinstall|hyperpage}{37}
-\indexentry{RTXI, configuration|hyperpage}{40}
-\indexentry{modules, installation|hyperpage}{42}
-\indexentry{installation, modules|hyperpage}{42}
-\indexentry{DAQ, configuration|hyperpage}{43}
-\indexentry{sampling rate|hyperpage}{45}
-\indexentry{HDF5, file format|hyperpage}{49}
-\indexentry{HDF5, MATLAB|hyperpage}{51}
-\indexentry{rtxi\_hdf\_matlabize|hyperpage}{52}
-\indexentry{modules, custom|hyperpage}{54}
-\indexentry{DefaultGUIModel|hyperpage}{54}
-\indexentry{modules, DefaultGUIModel|hyperpage}{54}
-\indexentry{Makefile|hyperpage}{55}
-\indexentry{RT::System::getInstance()-$>$getPeriod()|hyperpage}{57}
-\indexentry{setState()|hyperpage}{58}
-\indexentry{setParameter()|hyperpage}{58}
-\indexentry{setParameter()|hyperpage}{59}
-\indexentry{DYNAMO|hyperpage}{61}
-\indexentry{modules, DYNAMO|hyperpage}{61}
-\indexentry{modules, custom GUI|hyperpage}{63}
-\indexentry{real-time performance|hyperpage}{66}
-\indexentry{latency|hyperpage}{66}
-\indexentry{Signal Generator|hyperpage}{70}
-\indexentry{utilities, Signal Generator|hyperpage}{70}
-\indexentry{Signal Generator, tutorial|hyperpage}{71}
-\indexentry{tutorial, Signal Generator|hyperpage}{71}
-\indexentry{Mimic|hyperpage}{72}
-\indexentry{utilities, Mimic|hyperpage}{72}
-\indexentry{Mimic, tutorial|hyperpage}{73}
-\indexentry{tutorial, Mimic|hyperpage}{73}
-\indexentry{Noise Generator|hyperpage}{75}
-\indexentry{utilities, Noise Generator|hyperpage}{75}
-\indexentry{Wave Maker|hyperpage}{75}
-\indexentry{utilities, Wave Maker|hyperpage}{75}
-\indexentry{FIR Filter|hyperpage}{77}
-\indexentry{utilities, FIR Filter|hyperpage}{77}
-\indexentry{filter, FIR Filter|hyperpage}{77}
-\indexentry{IIR Filter|hyperpage}{78}
-\indexentry{utilities, IIR Filter|hyperpage}{78}
-\indexentry{filter, IIR Filter|hyperpage}{78}
-\indexentry{licensing|hyperpage}{81}
-\indexentry{GNU GPL|hyperpage}{81}
-\indexentry{GNU LGPL|hyperpage}{93}
-\indexentry{DYNAMO, syntax|hyperpage}{96}
-\indexentry{dependencies, software|hyperpage}{110}
+\indexentry{RTXI, configuration|hyperpage}{39}
+\indexentry{modules, installation|hyperpage}{41}
+\indexentry{installation, modules|hyperpage}{41}
+\indexentry{DAQ, configuration|hyperpage}{42}
+\indexentry{sampling rate|hyperpage}{44}
+\indexentry{HDF5, file format|hyperpage}{48}
+\indexentry{HDF5, MATLAB|hyperpage}{49}
+\indexentry{rtxi\_hdf\_matlabize|hyperpage}{50}
+\indexentry{modules, custom|hyperpage}{52}
+\indexentry{DefaultGUIModel|hyperpage}{52}
+\indexentry{modules, DefaultGUIModel|hyperpage}{52}
+\indexentry{Makefile|hyperpage}{53}
+\indexentry{RT::System::getInstance()-$>$getPeriod()|hyperpage}{55}
+\indexentry{setState()|hyperpage}{56}
+\indexentry{setParameter()|hyperpage}{56}
+\indexentry{setParameter()|hyperpage}{57}
+\indexentry{DYNAMO|hyperpage}{59}
+\indexentry{modules, DYNAMO|hyperpage}{59}
+\indexentry{modules, custom GUI|hyperpage}{61}
+\indexentry{real-time performance|hyperpage}{64}
+\indexentry{latency|hyperpage}{64}
+\indexentry{Signal Generator|hyperpage}{68}
+\indexentry{utilities, Signal Generator|hyperpage}{68}
+\indexentry{Signal Generator, tutorial|hyperpage}{69}
+\indexentry{tutorial, Signal Generator|hyperpage}{69}
+\indexentry{Mimic|hyperpage}{70}
+\indexentry{utilities, Mimic|hyperpage}{70}
+\indexentry{Mimic, tutorial|hyperpage}{71}
+\indexentry{tutorial, Mimic|hyperpage}{71}
+\indexentry{Noise Generator|hyperpage}{73}
+\indexentry{utilities, Noise Generator|hyperpage}{73}
+\indexentry{Wave Maker|hyperpage}{73}
+\indexentry{utilities, Wave Maker|hyperpage}{73}
+\indexentry{FIR Filter|hyperpage}{75}
+\indexentry{utilities, FIR Filter|hyperpage}{75}
+\indexentry{filter, FIR Filter|hyperpage}{75}
+\indexentry{IIR Filter|hyperpage}{76}
+\indexentry{utilities, IIR Filter|hyperpage}{76}
+\indexentry{filter, IIR Filter|hyperpage}{76}
+\indexentry{licensing|hyperpage}{79}
+\indexentry{GNU GPL|hyperpage}{79}
+\indexentry{GNU LGPL|hyperpage}{91}
+\indexentry{DYNAMO, syntax|hyperpage}{94}
+\indexentry{dependencies, software|hyperpage}{108}

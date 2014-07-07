@@ -1,5 +1,5 @@
 
-\subsection{The Easy Method}
+\subsection{The Live USB}
 \label{easyinstall}\index{RTXI, Live CD, Live USB, installation, easy install}
 
 The Live USB provides a complete real-time Linux operating system with RTXI without installing anything on your computer. Within the live environment, you can mount your hard drive and technically run experiments, though real-time performance will be slower compared to that of an actually installed system. For actual experiments, we strongly recommend installing RTXI and the entire operating system environment on your hard drive. This can be easily done from within the Live USB. 
@@ -30,12 +30,14 @@ To install the live image to a USB, follow these steps:
 
 Once everything is set, click ``OK" to start the installation process. 
 
-\item \textbf{Check the config file.} Open the USB. You will see several files that correspond to different parts of the live system. 
+\item \textbf{Edit the \texttt{syslinux.cfg} file.} Before you reboot your computer, open the USB drive and check the \texttt{syslinux.cfg} file. \texttt{syslinux.cfg} contains boot parameters needed to properly boot into the Live USB. Make sure it contains the lines: 
 
-Open the file in your favorite text editor and check the boot line. Make sure the image being booted reads: 
 \begin{example}
-BOOT=/vmlinuz
+kernel /casper/vmlinuz \\
+append boot=casper initrd=/casper/initrd.gz splash -- persistent \\
 \end{example}
+
+These lines specify where the compressed kernel and the initial ramdisk images are stored in the filesystem. Both are needed to be correctly configured to boot the system. If your file contains these two lines, leave them. If it has different parameters, change them. You may ignore the other lines. 
 
 \item \textbf{Boot using the Live USB.} Once the Unetbootin is finished, shut off your system. By default, your computer may not be configured to boot off a USB drive. When you turn on your computer, you will have to press ``F2", ``F4", or another F key depending on your computer to access your BIOS menu. The following instructions use the BIOS of our system, but your will likely be similar. 
 
@@ -70,6 +72,8 @@ Your system will restart and should now boot into your Live USB. In some cases, 
 \# startx
 \end{example}
 \end{enumerate}
+
+\subsection{The Easy Method}
 
 To install RTXI from the live environment to your hard drive, follow these steps. 
 
@@ -115,7 +119,7 @@ You may also want to leave some extra room for a data partition that is read/wri
 
 When satisfied with your settings, start the installation. 
 
-\item \textbf{Boot into the GRUB menu.}In addition to the OS, the installer will set up a program called GRUB. When you reboot your computer, GRUB will set up a menu that where you choose which OS to boot. Note that if you ever re-install Windows, GRUB will get overwritten, and the OS-selection menu will no longer appear. Linux will still exist on your hard drive. You will just need to reinstall GRUB using a Live CD.
+\item \textbf{Boot into the GRUB menu.} In addition to the OS, the installer will set up a program called GRUB. When you reboot your computer, GRUB will set up a menu that where you choose which OS to boot. Note that if you ever re-install Windows, GRUB will get overwritten, and the OS-selection menu will no longer appear. Linux will still exist on your hard drive. You will just need to reinstall GRUB using a Live CD.
 
 \item \textbf{Start RTXI.} Now, with our Linux OS installed, you can start RTXI. From the terminal (CTRL+ALT+T), enter:
 \begin{example}

@@ -2,23 +2,19 @@
 
 This section presents a tutorial similar to those described by Molecular Devices for their suite of electrophysiology products. This exercise uses a CLAMP-1U model cell with an Axon\tm Axoclamp\tm 2B amplifier operating in bridge mode. Connect the HS-2A-x0.1LU headstage to the ME1 PROBE connector and the HS-2A-x1LU head stage to the ME2 probe connector on the back panel of the amplifier.
 
-\marginlabel{Connect equipment\\to DAQ card} Make the following connections between the amplifier and the DAQ card. 
+\marginlabel{\textbf{Connect equipment\\to DAQ card}} Make the following connections between the amplifier and the DAQ card. 
 \begin{enumerate}
 \item Axoclamp 10Vm Output $\rightarrow$ DAQ Analog Input 0
 \item Axoclamp Im Output $\rightarrow$ DAQ Analog Input 1
 \item DAQ Analog Output 0 $\rightarrow$ Axoclamp EXT. ME1 COMMAND
 \end{enumerate}
 
-\marginlabel{Start RTXI} If you have not already calibrated your DAQ card, use \texttt{comedi\_calibrate} or \texttt{comedi\_soft\_calibrate} (if you have an NI M-series card):
+\marginlabel{\textbf{Start RTXI}} If you installed RTXI using a Live USB, you can start RTXI from the Applications menu. However, it is a good idea to start RTXI from the terminal since some modules output error messages or warnings to the terminal: 
 \begin{example}
-\$ sudo comedi\_calibrate --reset --dump --calibrate --results --verbose /dev/comedi0
-\end{example}
-If you installed RTXI using the Live CD, you may start RTXI from the Applications menu. However, it is a good idea to start RTXI from the terminal since some modules output error messages or warnings to the terminal: 
-\begin{example}
-\$ rtxi
+\$ sudo rtxi
 \end{example}
 \vspace{1cm}
-\marginlabel{Configure DAQ Channels} \index{DAQ, configuration}While RTXI automatically detects the available channels on your DAQ card, they need to be configured inside RTXI. From the \textbf{System} menu on the RTXI menu bar, choose the \textbf{Control Panel}. The default device should be your DAQ card listed as \texttt{/dev/comedi0}. The analog channels on most multifunction DAQ cards have a range of -10 V to +10 V based on a ground reference and this is the default in RTXI. You should check the specifications for your DAQ card and choose the corresponding settings in RTXI. For Analog Input 0, the amplifier specifies that the signal has a gain of 10 applied (10Vm). Invert this and enter a scale of 0.1 V/V for this channel. Click the \textbf{``Active"} toggle button and click the \textbf{``Apply"} button. You will not acquire any actual data on a channel until it has been set to ``Active."
+\marginlabel{\textbf{Configure DAQ Channels}} \index{DAQ, configuration}While RTXI automatically detects the available channels on your DAQ card, they need to be configured inside RTXI. From the \textbf{System} menu on the RTXI menu bar, choose the \textbf{Control Panel}. The default device should be your DAQ card listed as \texttt{/dev/analogy0}. The analog channels on most multifunction DAQ cards have a range of -10 V to +10 V based on a ground reference and this is the default in RTXI. You should check the specifications for your DAQ card and choose the corresponding settings in RTXI. For Analog Input 0, the amplifier specifies that the signal has a gain of 10 applied (10Vm). Invert this and enter a scale of 0.1 V/V for this channel. Click the \textbf{``Active"} toggle button and click the \textbf{``Apply"} button. You will not acquire any actual data on a channel until it has been set to ``Active."
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=4in]{axoclamptutorial0.png} 
