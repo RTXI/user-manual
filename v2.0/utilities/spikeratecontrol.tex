@@ -1,0 +1,35 @@
+\subsubsection{Overview}
+\label{Spike Rate Control}
+\index{Spike Rate Control}\index{utilities, Spike Rate Control}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=2in]{spikeratecontrol.png} 
+\caption[Spike Rate Control]{The spike rate controller modifies applied current to stabilize ISI around a user-specified value.} 
+\end{center}
+\label{spikeratecontrol}
+\end{figure}
+
+This module is designed to stabilize spike rates around a user-specified ISI. It reads in the spike state of a connected spike detector module and, depending on the state of the detector and the specified ISI, outputs a current. The amplitude is determined by comparing the error between real ISI and the target. When error oscillates around the target, output is small, but when error increases, the output increases in amplitude. 
+
+\subsubsection{Input Channels}
+\begin{description}
+\item[input(0) - State] the `state' of a connected spike detector
+\end{description}
+
+\subsubsection{Output Channels}
+\begin{description}
+\item[output(0) - Iapp] applied current (A)
+\item[output(1) - ISI] the inter-spike interval 
+\end{description}
+
+\subsubsection{Parameters}
+\begin{description}
+\item[TargetISI] the desired ISI (ms)
+\item[MaxDeltaI] the maximum amount the applied current may change between steps (dA/dt)
+\item[InitialI] current (A)
+\end{description}
+
+\subsubsection{States}
+\begin{description}
+\item[IApp] applied current (displays output(1) current)
+\end{description}

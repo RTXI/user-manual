@@ -41,35 +41,53 @@
 \indexentry{DefaultGUIModel|hyperpage}{52}
 \indexentry{modules, DefaultGUIModel|hyperpage}{52}
 \indexentry{Makefile|hyperpage}{53}
-\indexentry{RT::System::getInstance()-$>$getPeriod()|hyperpage}{55}
-\indexentry{setState()|hyperpage}{56}
-\indexentry{setParameter()|hyperpage}{56}
+\indexentry{RT::System::getInstance()-$>$getPeriod()|hyperpage}{56}
+\indexentry{setState()|hyperpage}{57}
 \indexentry{setParameter()|hyperpage}{57}
-\indexentry{DYNAMO|hyperpage}{59}
-\indexentry{modules, DYNAMO|hyperpage}{59}
-\indexentry{modules, custom GUI|hyperpage}{61}
+\indexentry{setParameter()|hyperpage}{57}
+\indexentry{modules, custom GUI|hyperpage}{59}
+\indexentry{DYNAMO|hyperpage}{60}
+\indexentry{modules, DYNAMO|hyperpage}{60}
 \indexentry{real-time performance|hyperpage}{64}
 \indexentry{latency|hyperpage}{64}
-\indexentry{Signal Generator|hyperpage}{68}
-\indexentry{utilities, Signal Generator|hyperpage}{68}
-\indexentry{Signal Generator, tutorial|hyperpage}{69}
-\indexentry{tutorial, Signal Generator|hyperpage}{69}
-\indexentry{Mimic|hyperpage}{70}
-\indexentry{utilities, Mimic|hyperpage}{70}
-\indexentry{Mimic, tutorial|hyperpage}{71}
-\indexentry{tutorial, Mimic|hyperpage}{71}
-\indexentry{Noise Generator|hyperpage}{73}
-\indexentry{utilities, Noise Generator|hyperpage}{73}
-\indexentry{Wave Maker|hyperpage}{73}
-\indexentry{utilities, Wave Maker|hyperpage}{73}
-\indexentry{FIR Filter|hyperpage}{75}
-\indexentry{utilities, FIR Filter|hyperpage}{75}
-\indexentry{filter, FIR Filter|hyperpage}{75}
-\indexentry{IIR Filter|hyperpage}{76}
-\indexentry{utilities, IIR Filter|hyperpage}{76}
-\indexentry{filter, IIR Filter|hyperpage}{76}
-\indexentry{licensing|hyperpage}{79}
-\indexentry{GNU GPL|hyperpage}{79}
-\indexentry{GNU LGPL|hyperpage}{91}
-\indexentry{DYNAMO, syntax|hyperpage}{94}
-\indexentry{dependencies, software|hyperpage}{108}
+\indexentry{Signal Generator|hyperpage}{70}
+\indexentry{utilities, Signal Generator|hyperpage}{70}
+\indexentry{Signal Generator, tutorial|hyperpage}{71}
+\indexentry{tutorial, Signal Generator|hyperpage}{71}
+\indexentry{Mimic|hyperpage}{72}
+\indexentry{utilities, Mimic|hyperpage}{72}
+\indexentry{Mimic, tutorial|hyperpage}{73}
+\indexentry{tutorial, Mimic|hyperpage}{73}
+\indexentry{Noise Generator|hyperpage}{74}
+\indexentry{utilities, Noise Generator|hyperpage}{74}
+\indexentry{Wave Maker|hyperpage}{75}
+\indexentry{utilities, Wave Maker|hyperpage}{75}
+\indexentry{FIR Filter|hyperpage}{77}
+\indexentry{utilities, FIR Filter|hyperpage}{77}
+\indexentry{filter, FIR Filter|hyperpage}{77}
+\indexentry{IIR Filter|hyperpage}{78}
+\indexentry{utilities, IIR Filter|hyperpage}{78}
+\indexentry{filter, IIR Filter|hyperpage}{78}
+\indexentry{Spike Detector|hyperpage}{83}
+\indexentry{utilities, Spike Detector|hyperpage}{83}
+\indexentry{Spike Statistics|hyperpage}{84}
+\indexentry{utilities, Spike Statistics|hyperpage}{84}
+\indexentry{Spike-triggered Average|hyperpage}{84}
+\indexentry{utilities, Spike-triggered Average|hyperpage}{84}
+\indexentry{Spike Rate Control|hyperpage}{85}
+\indexentry{utilities, Spike Rate Control|hyperpage}{85}
+\indexentry{Hodgkin-Huxley Neuron|hyperpage}{87}
+\indexentry{utilities, Hodkin-Huxley Neuron|hyperpage}{87}
+\indexentry{Connor-Stevens Neuron|hyperpage}{88}
+\indexentry{utilities, Connor-Stevens Neuron|hyperpage}{88}
+\indexentry{Wang-Buzsaki|hyperpage}{89}
+\indexentry{utilities, Wang-Buzsaki Neuron|hyperpage}{89}
+\indexentry{Alpha Synapse|hyperpage}{91}
+\indexentry{utilities, Alpha Synapse|hyperpage}{91}
+\indexentry{Coupled Neurons|hyperpage}{92}
+\indexentry{utilities, Coupled Neurons|hyperpage}{92}
+\indexentry{licensing|hyperpage}{94}
+\indexentry{GNU GPL|hyperpage}{94}
+\indexentry{GNU LGPL|hyperpage}{106}
+\indexentry{DYNAMO, syntax|hyperpage}{109}
+\indexentry{dependencies, software|hyperpage}{123}

@@ -3,7 +3,7 @@
 \index{DYNAMO}
 \index{modules, DYNAMO}
 A complete manual for the DYNAMO class is given in Appendix \ref{dynamo appendix}.
-\attention In order to compile DYNAMO models from within RTXI, you will need to start RTXI with \texttt{sudo} privileges. \seealso{Chapter \ref{install DYNAMO}\\Installing DYNAMO} DYNAMO is already installed on the Live CD but users installing RTXI manually should follow the instructions for enabling DYNAMO on their system. \vspace{.5cm}
+\attention \seealso{Chapter \ref{install DYNAMO}\\Installing DYNAMO} DYNAMO is already installed on the Live CD but users installing RTXI manually should follow the instructions for enabling DYNAMO on their system. \vspace{.5cm}
 \hrule
 \vspace{.5cm}
 DYNAMO is a scripting language that allows you to create a RTXI module based on a dynamical system model described by ordinary differential equations. It uses a simple syntax for declaring the system states, parameters, state functions, and differential equations. DYNAMO models can be written using any plain text editor and are loaded into RTXI using the menu item \textbf{Modules}$\rightarrow$\textbf{Load DYNAMO Module}. This calls the DYNAMO translator, which generates a \cpp  header and implementation file and compiles an RTXI module based on the \texttt{DefaultGUIModel} class. The generated header and implementation file are not readable since the computations are parsed into single multiply and add arithmetic operations such that intermediate values are given arbitrary variable names. After the translation step, the module is accessible through the regular \textbf{Load User Module} menu item. Unless the DYNAMO model file has been edited, it will not be re-translated and re-compiled.
@@ -52,8 +52,7 @@ where \texttt{method\_name} can be either \texttt{euler} or \texttt{mau}, indica
         EXTERNAL OUTPUT Vout;
 \end{example}
 
-The input state can then be used in equations and expressions; the output state may not be used in expressions, and it must be assigned a value.  The values of these external state variables are in terms of
-the units provided by the data acquisition board, usually volts. The order in which external input and output states are declared determines their assignment to physical channels of the data acquisition board.  For example, in the above declaration, state \emph{Vin1} will be assigned to input channel 0, and state \emph{Vin2} will be assigned to input channel 1. Had they been declared in reverse order, then state \emph{Vin1} would have been assigned to input channel 1, and state \emph{Vin2} would have been assigned to input channel 0.
+The input state can then be used in equations and expressions. The output state may not be used in expressions, and it must be assigned a value.  The values of these external state variables are in terms of the units provided by the data acquisition board, usually volts. The order in which external input and output states are declared determines their assignment to physical channels of the data acquisition board.  For example, in the above declaration, state \emph{Vin1} will be assigned to input channel 0, and state \emph{Vin2} will be assigned to input channel 1. Had they been declared in reverse order, then state \emph{Vin1} would have been assigned to input channel 1, and state \emph{Vin2} would have been assigned to input channel 0.
 
 \emph{Functions} are quantities that are statically dependent on other quantities in the system---unlike state equations, their equations are not permitted to use the previously computed value of the quantity. There are \emph{scalar functions} which return a scalar value:
 \begin{example}

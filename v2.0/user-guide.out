@@ -23,44 +23,57 @@
 \BOOKMARK [1][-]{section.3.7}{Acquiring Data \(Model Cell Tutorial\)}{chapter.3}
 \BOOKMARK [1][-]{section.3.8}{HDF5 Data Files}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Writing Custom User Modules}{}
-\BOOKMARK [1][-]{section.4.1}{Using the DefaultGUIModel Class}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.1.1}{Creating your own module class}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.2}{Edit the Makefile}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.3}{Define model parameters, inputs, and outputs}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.4}{Initialize the model}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.5}{The execute\(\) loop}{section.4.1}
-\BOOKMARK [2][-]{subsection.4.1.6}{The update\(\) function}{section.4.1}
-\BOOKMARK [1][-]{section.4.2}{DYNAMO Modules}{chapter.4}
-\BOOKMARK [1][-]{section.4.3}{Developing Modules with Custom GUIs}{chapter.4}
+\BOOKMARK [1][-]{section.4.1}{Forking Existing Modules}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Using the DefaultGUIModel Class}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Creating your own module class}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Edit the Makefile}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Define model parameters, inputs, and outputs}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.4}{Initialize the model}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.5}{The execute\(\) loop}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.6}{The update\(\) function}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Customizing the GUI}{chapter.4}
 \BOOKMARK [2][-]{subsection.4.3.1}{Leave everything to createGUI}{section.4.3}
 \BOOKMARK [2][-]{subsection.4.3.2}{Use customizeGUI}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{DYNAMO Modules}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Real-time Performance}{}
 \BOOKMARK [1][-]{section.5.1}{Latency Test}{chapter.5}
 \BOOKMARK [1][-]{section.5.2}{Preempt Test}{chapter.5}
 \BOOKMARK [1][-]{section.5.3}{Switches Test}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{Utilities and Experimental Suites}{}
-\BOOKMARK [1][-]{section.6.1}{Signal Utilities}{chapter.6}
-\BOOKMARK [2][-]{subsection.6.1.1}{Signal Generator}{section.6.1}
-\BOOKMARK [2][-]{subsection.6.1.2}{Mimic}{section.6.1}
-\BOOKMARK [2][-]{subsection.6.1.3}{Noise Generator}{section.6.1}
-\BOOKMARK [2][-]{subsection.6.1.4}{Wave Maker}{section.6.1}
-\BOOKMARK [1][-]{section.6.2}{Filter Utilities}{chapter.6}
-\BOOKMARK [2][-]{subsection.6.2.1}{FIR Filter}{section.6.2}
-\BOOKMARK [2][-]{subsection.6.2.2}{IIR Filter}{section.6.2}
-\BOOKMARK [1][-]{section.6.3}{Patch Clamp Experimental Suite}{chapter.6}
-\BOOKMARK [2][-]{subsection.6.3.1}{Amplifier Control Modules}{section.6.3}
-\BOOKMARK [2][-]{subsection.6.3.2}{Membrane Test}{section.6.3}
-\BOOKMARK [2][-]{subsection.6.3.3}{Clamp Protocol}{section.6.3}
-\BOOKMARK [0][-]{chapter*.31}{Appendix}{}
-\BOOKMARK [1][-]{section..1}{Licensing Information}{chapter*.31}
+\BOOKMARK [1][-]{section.6.1}{Current Modules and Utilities}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Signal Utilities}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.2.1}{Signal Generator}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.2}{Mimic}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.3}{Noise Generator}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.4}{Wave Maker}{section.6.2}
+\BOOKMARK [1][-]{section.6.3}{Filter Utilities}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{FIR Filter}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.2}{IIR Filter}{section.6.3}
+\BOOKMARK [1][-]{section.6.4}{Patch Clamp Experimental Suite}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.4.1}{Amplifier Control Modules}{section.6.4}
+\BOOKMARK [2][-]{subsection.6.4.2}{Membrane Test}{section.6.4}
+\BOOKMARK [2][-]{subsection.6.4.3}{Clamp Protocol}{section.6.4}
+\BOOKMARK [1][-]{section.6.5}{Spike Utilities}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.5.1}{Spike Detector}{section.6.5}
+\BOOKMARK [2][-]{subsection.6.5.2}{Spike Statistics}{section.6.5}
+\BOOKMARK [2][-]{subsection.6.5.3}{Spike-triggered Average}{section.6.5}
+\BOOKMARK [2][-]{subsection.6.5.4}{Spike Rate Control}{section.6.5}
+\BOOKMARK [1][-]{section.6.6}{Neuron Utilities}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.6.1}{Hodgkin-Huxley Model Neuron}{section.6.6}
+\BOOKMARK [2][-]{subsection.6.6.2}{Connor-Stevens Model Neuron}{section.6.6}
+\BOOKMARK [2][-]{subsection.6.6.3}{Wang-Buzsaki Model Neuron}{section.6.6}
+\BOOKMARK [2][-]{subsection.6.6.4}{Alpha Synapse}{section.6.6}
+\BOOKMARK [2][-]{subsection.6.6.5}{Reciprocally-Coupled Neurons}{section.6.6}
+\BOOKMARK [0][-]{chapter*.72}{Appendix}{}
+\BOOKMARK [1][-]{section..1}{Licensing Information}{chapter*.72}
 \BOOKMARK [2][-]{subsection..1.1}{GNU General Public License}{section..1}
 \BOOKMARK [2][-]{subsection..1.2}{GNU Lesser General Public License}{section..1}
-\BOOKMARK [1][-]{section..2}{DYNAMO Scripting Language}{chapter*.31}
+\BOOKMARK [1][-]{section..2}{DYNAMO Scripting Language}{chapter*.72}
 \BOOKMARK [2][-]{subsection..2.1}{Using DYNAMO with RTXI}{section..2}
 \BOOKMARK [2][-]{subsection..2.2}{Running DYNAMO from the terminal}{section..2}
 \BOOKMARK [2][-]{subsection..2.3}{DYNAMO Syntax}{section..2}
-\BOOKMARK [1][-]{section..3}{DYNAMO Example}{chapter*.31}
-\BOOKMARK [1][-]{section..4}{Information for Developers}{chapter*.31}
+\BOOKMARK [1][-]{section..3}{DYNAMO Example}{chapter*.72}
+\BOOKMARK [1][-]{section..4}{Information for Developers}{chapter*.72}
 \BOOKMARK [2][-]{subsection..4.1}{RTXI Architecture}{section..4}
 \BOOKMARK [2][-]{subsection..4.2}{Software Requirements}{section..4}
 \BOOKMARK [2][-]{subsection..4.3}{Development Roadmap}{section..4}

@@ -2,6 +2,9 @@
 \label{custommodules}
 \index{modules, custom}
 
+\section{Forking Existing Modules}
+The easiest method of developing modules is to adapt existing ones for your own purposes. Users can fork modules on our GitHub repository (https://github.com/RTXI) within GitHub or only on their own machines.\seealso{Chapter \ref{rtximoduleslist}\\ \texttt{RTXI Modules}}\ Descriptions of existing modules are available in the Utilities section. 
+
 \section{Using the \texttt{DefaultGUIModel} Class}
 \label{defaultGUImodules}
 \index{DefaultGUIModel}
@@ -110,9 +113,10 @@ This returns the period in nanoseconds.
 
 \subsection{The execute() loop}
 \label{DefaultGUIModel execute}
-The \texttt{execute()} function will run to completion on every time step. The computations performed here must complete within the real-time period that you have set in the \seealso{Chapter \ref{system control panel} \\System Control Panel}System Control panel to maintain system stability. The efficiency of your code here will affect the performance of your system. You should use private variables defined in the class header rather than creating variables inside the function on every time step. If you absolutely must create a variable inside \texttt{execute()}, use a static call so that the same memory block is used each time. \attention You should be wary of using \texttt{do-while} and \texttt{for} structures if you are uncertain how long these loops will take to complete. Within the execute function, you must also be careful to bound the output signal and perform your own error checking to maintain the stability of the closed-loop. Notice that at the end, we have set \texttt{output(0)} to update the membrane voltage signal emitted by this module. RTXI's signals-and-slots architecture allows you to \attention connect any signal to any slot. There is no error checking that the connection is valid, eg. that quantities with matching units of measurement are connected.
+The \texttt{execute()} function will run to completion on every time step. The computations performed here must complete within the real-time period that you have set in the \seealso{Chapter \ref{system control panel} \\System Control Panel}System Control panel to maintain system stability. The efficiency of your code here will affect the performance of your system. You should use private variables defined in the class header rather than creating variables inside the function on every time step. If you absolutely must create a variable inside \texttt{execute()}, use a static call so that the same memory block is used each time. \attention You should be wary of using \texttt{do-while} and \texttt{for} structures if you are uncertain how long these loops will take to complete. Within the execute function, you must also be careful to bound the output signal and perform your own error checking to maintain the stability of the closed-loop. Notice that at the end, we have set \texttt{output(0)} to update the membrane voltage signal emitted by this module. RTXI's signals-and-slots architecture allows you to \attention connect any signal to any slot. There is no error checking to ensure that the connection is valid, eg. that quantities with matching units of measurement are connected.
 
-\bigskip\hrule
+%\bigskip\hrule
+\begin{maxipage}
 \begin{example}
 void Neuron::execute(void) $\{$\\
 \hspace{.5cm}for (int i = 0; i < steps; ++i)\\
@@ -120,8 +124,9 @@ void Neuron::execute(void) $\{$\\
 \hspace{.5cm}output(0) = V * 1e-3; // convert to mV\\
 $\}$\\
 \end{example}
-\bigskip
-\hrule
+\end{maxipage}
+%\bigskip
+%\hrule
 
 \subsection{The update() function}
 \label{DefaultGUIModel update}
@@ -153,7 +158,7 @@ It is often the case that you may want to display units in the GUI with more con
 setParameter("E\_Na", E\_Na*1000); // convert to mV\\
 \end{example}
 
-\attention Always comment your units. Otherwise, your code will not be readily readable by other or even yourself later on, 
+\attention Always comment your units. Otherwise, your code will not be readily readable by other or even yourself later on. 
 
 Under the \texttt{MODIFY} flag, you should grab all the values in the GUI textboxes and update the values of the parameters as follows:
 \begin{example}

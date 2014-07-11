@@ -1,4 +1,4 @@
-\section{Developing Modules with Custom GUIs}
+\section{Customizing the GUI}
 \label{Qtmodules}
 \index{modules, custom GUI}
 
@@ -23,10 +23,11 @@ To understand how to use \texttt{customizeGUI}, it is important to understand th
 \end{center}
 \end{figure}
 
-As is, Neuron does not use \texttt{customizeGUI}. Suppose that we wanted to add two buttons in a row above the parameters. The syntax would be as follows:
+As is, Neuron does not use \texttt{customizeGUI}. Suppose, though, that we wanted to add two buttons in a row above the parameters. The syntax would be as follows:
 
+\begin{maxipage}
 \begin{example}
-void Neuron::customizeLayout(void) \{\\
+\hspace{0cm}void Neuron::customizeLayout(void) \{\\
 \hspace{.5cm}QGridLayout *customlayout = DefaultGUIModel::getLayout();\\
 \hspace{.5cm}\\
 \hspace{.5cm}QGroupBox *buttongroup = new QGroupBox;\\
@@ -36,8 +37,9 @@ void Neuron::customizeLayout(void) \{\\
 \hspace{.5cm}buttongroup->setLayout(buttonlayout);\\
 \hspace{.5cm}\\
 \hspace{.5cm}customlayout->addWidget(buttongroup, 0, 0)\\
-\hspace{.5cm}setLayout(customlayout);
+\hspace{.5cm}setLayout(customlayout);\\
 \}\\
 \end{example}
+\end{maxipage}
 
-The first and last two commands are necessary for \texttt{customizeLayout} to function. The first one grabs the window object created by \texttt{DefaultGUIModel::createGUI} and assigns it to \texttt{customlayout}. The middle section defines the elements to be added to the GUI. These are all Qt-defined classes for which documentation is freely available online (http://qt-project.org/doc/qt-4.8/). The second-to-last line assigns the GUI elements to the window. It specifies position (0,0), so the buttons will be displayed in the top left corner. The last line sets the GUI to the newly modified one. 
+The first and last two commands are necessary for \texttt{customizeLayout} to function. The first one grabs the window object created by \texttt{createGUI} and assigns it to \texttt{customlayout}. The middle section defines the elements to be added to the GUI. These are all Qt-defined classes for which documentation is freely available online (http://qt-project.org/doc/qt-4.8/). The second-to-last line assigns the GUI elements to the window. It specifies position (0,0), so the buttons will be displayed in the top left corner. The last line sets the GUI to the newly modified one. 

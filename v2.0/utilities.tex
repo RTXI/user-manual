@@ -1,11 +1,49 @@
 % Utilities and Experimental Suites
 \clearpage
 \chapter{Utilities and Experimental Suites}
-Outside its core modules, RTXI provides a number of useful utilities and experimental suites. While most utilities are designed as optional add-ons, RTXI has a growing library of experimental suites intended to perform complete biological experiments. Users can even augment experimental suites with their own custom modules to create complex experimental systems outside the intended use of these suites. For RTXI version 2.0, the Patch Clamp Experimental Suite is the only suite currently available. However, a number of other suites, such as a digital camera and imaging suite and another for multielectrode arrays, are in construction.
+\section{Current Modules and Utilities}
+\label{rtximoduleslist}
+Outside its core modules, RTXI provides a number of useful utilities and experimental suites. While most utilities are designed as optional add-ons, RTXI has a growing library of experimental suites intended to perform complete biological experiments. Users can even augment experimental suites with their own custom modules to create complex experimental systems outside the intended use of these suites. For RTXI version 2.0, the Patch Clamp Experimental Suite is the only suite currently available. However, a number of other suites, such as a digital camera and imaging suite and another for multielectrode arrays, are in construction. Below is a list of currently available modules. 
+
+\renewcommand*{\arraystretch}{1.1}
+\begin{longtable}{| p{.25\textwidth} | p{.65\textwidth} |} 
+\caption{List of modules available on our GitHub repository (https://github.com/RTXI).} \\
+ \hline
+ \textbf{Module} & \textbf{Description}\\\hline
+ Alpha Synapse & Creates an artificial synapse where the fixed conductance change is described by an alpha function.  \\\hline
+ Auto PI & Controls the Interspike interval (ISI) of a neuron using a Proportional Integral controller. The model automatically tunes the PI controller parameters to the neuron. \\\hline
+ Cardiac G-scaling Dynamic Clamp & This module is used to inject artificial conductances into a guinea pig cardiomyocytes through dynamic current clamp.  \\\hline
+ Clamp Protocol & The clamp protocol module is used to run complex voltage clamp experiments, and visualize the data in real time. This page will be updated with more information soon. \\\hline
+ Connor-Stevens Model Neuron & The Connor Stevens model neuron is like the Hodgkin-Huxley neuron, but with slightly different kinetics for the fast sodium and potassium delayed-rectifier channels and an additional A-type potassium channel. \\\hline
+ Current Clamp & This plugin allows you to deliver a protocol for current step or current ramp inputs. You can randomize the order of amplitudes used and repeat the entire protocol a certain number of times. \\\hline
+ Current Step & This plugin allows you to deliver a series of current step commands. \\\hline
+ Fixed G Waveform (from file) & This module allows you apply a fixed conductance waveform that has been saved in an external ASCII file. The ASCII file should contain a single column of conductance values. This module samples one value from the ASCII file on each time-step. \\\hline
+ FIR Window & This module creates an in-line FIR filter that can be applied to any signal in RTXI. Given the desired number of filter taps (filter order + 1), it computes the impulse response for a lowpass, highpass, bandpass, or bandstop filter using the window method. \\\hline
+ GenNet & Implements a framework for Hybrid Network experiments through an RTXI interface for coupling one or more biological neurons with one or more simulated neurons.  \\\hline
+ k-current & This module creates a potassium conductance where a junction potential can be added to shift the voltage-dependence of this conductance.\\\hline
+ High Frequency Conduction Block & (aka HFAC) This module implements a protocol for performing conduction block experiments on nerve fibers using high frequency AC current (HFAC) stimuli. Action potentials in the nerve are evoked with a single biphase square pulse and the HFAC signal is a sinusoidal waveform. \\\hline
+ Neuron & This is the classic Hodgkin-Huxley model neuron, and also functions as a template for creating you own modules. \\\hline
+ IIR Window & This module computes coefficients for Butterworth, Chebyshev, and Elliptical filters \\\hline
+ Kick & This module sends a single value as a trigger or ``kick” to another module.\\\hline
+ Membrane Test & The membrane test module is used to measure important electrophysiological parameters, such as electrode resistance and cell properties, during whole cell patch clamp experiments. \\\hline
+ Noise Generator & This module continuously generates Gaussian white noise computed using the Box-Muller method. \\\hline
+ Phase Response Curve & This module applies an alpha-shaped conductance to the cell at a fixed delay after 10 interspike intervals (ISI) and computes an intrinsic period P0 by averaging the most recent 5 of 10 ISIs.\\\hline
+ Reciprocally Coupled Neurons & This module reciprocally couples two neurons with alpha synapses. It requires the membrane potential of both cells and the inputs from two spike detector modules. \\\hline
+ Signal Generator & Generates sine waves, monophasic square waves, biphasic square waves, sawtooth waves, and ZAP stimuli. \\\hline
+ Spike Detector & This module uses a simple threshold to detect spikes. \\\hline
+ Spike Statistics & This module contains a spike detector based on a positive threshold crossing (see SpikeDetect module). It computes the average ISI and the current coefficient of variation. \\\hline
+ Spike-triggered Average & This module computes an event or spike-triggered average of any input signal. You specify a time window of interest around the spike.\\\hline
+ Sync & This module synchronizes the starting and stopping of a set of loaded modules. \\\hline
+ TTL Pulses & This module generates a train of TTL pulses (0-5 V square wave). \\\hline
+ Virtual Dendrite & ``Attaches" a cable to your cell through which synaptic inputs are ``passed" before RTXI injects the resultant current into the recording site. \\\hline
+ Wang-Buzsaki Model Neuron & The Wang-Buzsaki model uses the Hodgkin-Huxley formalism to describe a single-compartment neuron with sodium and potassium conductances. \\\hline
+ Wavemaker & This module loads data from an ASCII formatted file. It samples one value from the the file on every time step and creates and generates an output signal. The module computes the time length of the waveform based on the current real-time period. \\\hline
+\end{longtable}
 
 % Signals
 \clearpage
 \section{Signal Utilities}
+\label{signalutilities}
 The signal utilities are modules that can output several types of standard signals. These modules are useful for diagnostic purposes, such as testing a data acquisition board, or can be used as part of an experimental protocol, such as white noise injection into a neuronal network.
 
 \subsection{Signal Generator}
@@ -34,13 +72,14 @@ RTXI provides modules to filter incoming signal, which are most commonly used fo
 % Patch Clamp Experimental Suite
 \clearpage
 \section{Patch Clamp Experimental Suite}
-The patch clamp experimental suite is a group of modules designed to aid an electrophysiologist during patch clamping. The suite includes modules for interfacing with patch clamp amplifiers, monitoring electrode resistance during gigaseal formation, and running voltage clamp experiments.
+\label{patchclampsuite}
+The patch clamp experimental suite is a group of modules designed to aid  patch clamping experiments. The suite includes modules for interfacing with patch clamp amplifiers, monitoring electrode resistance during gigaseal formation, and running voltage clamp experiments.
 
 \subsection{Amplifier Control Modules}
 \input{./utilities/ampcontrol}
 
-\subsubsection{AM Systems Model 2400}
-\input{./utilities/am2400}
+%\subsubsection{AM Systems Model 2400}
+%\input{./utilities/am2400}
 
 \subsubsection{Axon Axopatch 1-D}
 \input{./utilities/axon1d}
@@ -56,3 +95,42 @@ The patch clamp experimental suite is a group of modules designed to aid an elec
 
 \subsection{Clamp Protocol}
 \input{./utilities/clampprotocol}
+
+% Spike Utilities
+\clearpage
+\section{Spike Utilities} 
+\label{spikeutilities}
+This set of modules is intended for spike detection, visualization, and generation of summary statistics. \seealso{ Chapter \ref{neuronutilties}\\\texttt{Neuron and Virtual\\ Cell Models}} It can be used in conjunction with real-world experiments and also with virtual-cell modules. 
+
+\subsection{Spike Detector}
+\input{./utilities/spikedetector}
+
+\subsection{Spike Statistics}
+\input{./utilities/spikestatistics}
+
+\subsection{Spike-triggered Average}
+\input{./utilities/spiketriggeredaverage}
+
+\subsection{Spike Rate Control}
+\input{./utilities/spikeratecontrol}
+
+% Neuron Models
+\clearpage
+\section{Neuron Utilities}
+\label{neuronutilties}
+This set of modules provide implementations of the Hodgkin-Huxley, Connor-Stevens, and Wang-Buzsaki model neurons. Also included are modules to simulate connections between artificial neurons and also between artificial and biological ones. 
+
+\subsection{Hodgkin-Huxley Model Neuron}
+\input{./utilities/hhneuron}
+
+\subsection{Connor-Stevens Model Neuron}
+\input{./utilities/csneuron}
+
+\subsection{Wang-Buzsaki Model Neuron}
+\input{./utilities/wbneuron}
+
+\subsection{Alpha Synapse}
+\input{./utilities/alphasynapse}
+
+\subsection{Reciprocally-Coupled Neurons}
+\input{./utilities/coupledneurons}

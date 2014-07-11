@@ -1,0 +1,43 @@
+\subsubsection{Overview}
+\label{Coupled Neurons}
+\index{Coupled Neurons}\index{utilities, Coupled Neurons}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=2in]{coupledneurons.png} 
+\caption[Reciprocally Coupled Neurons]{Neurons are reciprocally coupled using alpha-synapses.} 
+\end{center}
+\label{coupledneurons}
+\end{figure}
+
+This module reciprocally couples two neurons with alpha synapses. It requires the membrane potential of both cells and the inputs from two spike detector modules (eg. Spike Detect). It outputs the two synaptic currents which must then be appropriately connected. This module can be used to couple two biological neurons or one biological neuron with a model neuron. To couple the neurons, the module should be unpaused, then the ``Couple Neurons” toggle button can be activated/deactivated. This module also computes the difference in time between the spiking of both cells so that coupling can be activated programmatically based on the delay. To use this feature, the ``Couple Neurons” toggle button should be deactivated. The checkbox to ``Automate coupling delay” should be activated before unpausing the module. The difference in spike times between the two cells is continuously computed as Cell 2 – Cell 1. This can be plotted in the Oscilloscope to see how how this relationship changes over time.
+
+\subsubsection{Input Channels}
+\begin{description}
+\item[input(0) - Cell 1 Vm] Membrane potential (V)
+\item[input(1) - Cell 2 Vm] Membrane potential (V)
+\item[input(2) - Cell 1 Spike State] Spike State (=1 when spike occurs)
+\item[input(3) - Cell 2 Spike State] Spike State (=1 when spike occurs)
+\end{description}
+
+\subsubsection{Output Channels}
+\begin{description}
+\item[output(0) - ISyn 1->2] output current (A) from cell 1 to 2
+\item[output(1) - ISyn 2->1] output current (A) from cell 2 to 1
+\end{description}
+
+\subsubsection{Parameters}
+\begin{description}
+\item[Coupling delay] fixed delay at which to turn on coupling automatically (ms)
+\item[Tolerance] +/- tolerance for automatically turning on coupling (ms)
+\item[Gmax 1-2] maximum synaptic conductance for synapse from cell 1 to 2 (nS)
+\item[Tau 1-2] Time constant for alpha-type synapse from cell 1 to 2 (ms)
+\item[Esyn 1-2] Reversal potential for synapse from cell 1 to 2 (mV)
+\item[Gmax 2-1] maximum synaptic conductance for synapse from cell 2 to 1 (nS)
+\item[Tau 2-1] Time constant for alpha-type synapse from cell 2 to 1 (ms)
+\item[Esyn 2-1] Reversal potential for synapse from cell 2 to 1 (mV)
+\end{description}
+
+\subsubsection{States}
+\begin{description}
+\item[Phase Diff] Time difference between spikes (Cell 2 - Cell 1) (s)
+\end{description}
