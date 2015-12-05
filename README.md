@@ -1,4 +1,3 @@
-user-manual
-===========
+### User Manual
 
-The official RTXI v2.0 User Manual
+The official RTXI User Manual
